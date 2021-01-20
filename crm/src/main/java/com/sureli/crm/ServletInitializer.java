@@ -1,4 +1,4 @@
-package com.sureli.demo;
+package com.sureli.crm;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
