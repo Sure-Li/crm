@@ -9,4 +9,8 @@ public class HelloController {
 	public String goindex() {
 		return "hello";
 	}
+	@RequestMapping( "/add" )
+	public String goAdd() {
+		return "client/add";
+	}
 }
