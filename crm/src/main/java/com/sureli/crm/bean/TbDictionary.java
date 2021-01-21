@@ -1,7 +1,11 @@
 package com.sureli.crm.bean;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
+import lombok.ToString;
+@ToString
 public class TbDictionary {
     private Long rowId;
 
@@ -22,6 +26,8 @@ public class TbDictionary {
     private Date updateDate;
 
     private String dictionaryInfo;
+    
+    private List<TbDictionary> children =new ArrayList<TbDictionary>();
 
     public Long getRowId() {
         return rowId;
@@ -102,4 +108,13 @@ public class TbDictionary {
     public void setDictionaryInfo(String dictionaryInfo) {
         this.dictionaryInfo = dictionaryInfo == null ? null : dictionaryInfo.trim();
     }
+
+	public List<TbDictionary> getChildren() {
+		return children;
+	}
+
+	public void setChildren(List<TbDictionary> children) {
+		this.children = children;
+	}
+    
 }

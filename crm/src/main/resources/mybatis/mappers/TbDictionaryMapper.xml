@@ -74,7 +74,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    row_id, dictionary_parent_id, dictionary_value, dictionary_order, active_flag, create_by, 
+    row_id, dictionary_parent_id, dictionary_value,dictionary_info,dictionary_order, active_flag, create_by, 
     create_date, update_by, update_date
   </sql>
   <sql id="Blob_Column_List">

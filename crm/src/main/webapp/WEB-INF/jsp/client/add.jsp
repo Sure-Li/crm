@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,8 @@
 <link rel="stylesheet" href="assert/layui/css/layui.css">
 </head>
 <body>
-	<fieldset class="layui-elem-field" style="width: 45%;border: groove;margin-left: 20px" >
+	<fieldset class="layui-elem-field"
+		style="width: 45%; border: groove; margin-left: 20px">
 		<legend>客户基本信息</legend>
 		<div class="layui-field-box">
 			<form class="layui-form" action="">
@@ -25,37 +27,28 @@
 							placeholder="请输入客户名称" autocomplete="off" class="layui-input">
 					</div>
 				</div>
-				<div class="layui-form-item">
-					<label class="layui-form-label">客户来源</label>
-					<div class="layui-input-block">
-						<select name="city" lay-verify="required">
-							<option value=""></option>
-							<option value="0">渠道介绍</option>
-							<option value="1">地推</option>
-							<option value="2"></option>
-							<option value="3">深圳</option>
-							<option value="4">杭州</option>
-						</select>
-					</div>
-				</div>
-				<div class="layui-form-item">
-					<label class="layui-form-label">客户行业</label>
-					<div class="layui-input-block">
-						<select name="city" lay-verify="required">
-							<option value=""></option>
-							<option value="0">政府机关</option>
-							<option value="1">技术</option>
-							<option value="2">教育</option>
-							<option value="3">艺术</option>
-							<option value="4">其他</option>
-						</select>
-					</div>
-				</div>
+				<c:if test="${!empty dictionaryList}">
+					<c:forEach items="${dictionaryList}" var="dictionary">
+						<div class="layui-form-item">
+							<label class="layui-form-label">${dictionary.dictionaryInfo}</label>
+							<div class="layui-input-block">
+								<select name="city" lay-verify="required">
+									<c:if test="${dictionary.children.size()>0}">
+										<option value="">请选择</option>
+										<c:forEach items="${dictionary.children}" var="children">
+											<option value="1">${children.dictionaryInfo}</option>
+										</c:forEach>
+									</c:if>
+								</select>
+							</div>
+						</div>
+					</c:forEach>
+				</c:if>
 				<div class="layui-form-item">
 					<label class="layui-form-label">跟单方式</label>
 					<div class="layui-input-block">
-						<input type="checkbox" name="like" value="1" title="电话"> 
-						<input type="checkbox" name="like" value="2" title="微信" checked>
+						<input type="checkbox" name="like" value="1" title="电话"> <input
+							type="checkbox" name="like" value="2" title="微信" checked>
 						<input type="checkbox" name="like" value="3" title="email">
 					</div>
 				</div>

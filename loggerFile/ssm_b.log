@@ -1,0 +1,615 @@
+2021-01-21 14:07:58.685  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : Starting CrmApplication using Java 1.8.0_261 on OS-20190908SAIG with PID 10284 (E:\crm\crm\target\classes started by Administrator in E:\crm\crm)
+2021-01-21 14:07:58.687  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : No active profile set, falling back to default profiles: default
+2021-01-21 14:07:58.736  INFO 10284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-21 14:07:58.736  INFO 10284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-21 14:07:59.252 DEBUG 10284 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [E:\crm\crm\target\classes\com\sureli\crm\mapper\TbDictionaryMapper.class]
+2021-01-21 14:07:59.253 DEBUG 10284 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'tbDictionaryMapper' and 'com.sureli.crm.mapper.TbDictionaryMapper' mapperInterface
+2021-01-21 14:07:59.254 DEBUG 10284 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'tbDictionaryMapper'.
+2021-01-21 14:07:59.550  INFO 10284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-21 14:07:59.558  INFO 10284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 14:07:59.558  INFO 10284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 14:07:59.560  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-01-21 14:07:59.560  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-21 14:07:59.560  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-21 14:07:59.564  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-01-21 14:07:59.773  INFO 10284 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-01-21 14:07:59.778  INFO 10284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring embedded WebApplicationContext
+2021-01-21 14:07:59.778  INFO 10284 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1040 ms
+2021-01-21 14:07:59.973 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed configuration file: 'URL [classpath:mybatis/mybatis-config.xml]'
+2021-01-21 14:08:00.038 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbClientMapper.xml]'
+2021-01-21 14:08:00.056 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbDictionaryMapper.xml]'
+2021-01-21 14:08:00.069 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceActionMapper.xml]'
+2021-01-21 14:08:00.083 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceMapper.xml]'
+2021-01-21 14:08:00.104 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleMapper.xml]'
+2021-01-21 14:08:00.115 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleResourceMapper.xml]'
+2021-01-21 14:08:00.127 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserMapper.xml]'
+2021-01-21 14:08:00.137 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserRoleMapper.xml]'
+2021-01-21 14:08:00.256  INFO 10284 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:08:00.415  INFO 10284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 14:08:00.517  INFO 10284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/crm'
+2021-01-21 14:08:00.527  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : Started CrmApplication in 2.142 seconds (JVM running for 3.58)
+2021-01-21 14:08:12.416  INFO 10284 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 14:08:12.416  INFO 10284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 14:08:12.417  INFO 10284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-21 14:08:16.534 DEBUG 10284 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:08:16.536 DEBUG 10284 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c0f33e] was not registered for synchronization because synchronization is not active
+2021-01-21 14:08:16.552  INFO 10284 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-21 14:08:17.711  INFO 10284 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-21 14:08:17.714 DEBUG 10284 --- [http-nio-8080-exec-2] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1638325336 wrapping com.mysql.cj.jdbc.ConnectionImpl@6eff36ff] will not be managed by Spring
+2021-01-21 14:08:17.745 DEBUG 10284 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c0f33e]
+2021-01-21 14:10:04.278  INFO 10284 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:10:04.279  INFO 10284 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-21 14:10:04.288  INFO 10284 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-21 14:10:04.448  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : Starting CrmApplication using Java 1.8.0_261 on OS-20190908SAIG with PID 10284 (E:\crm\crm\target\classes started by Administrator in E:\crm\crm)
+2021-01-21 14:10:04.449  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : No active profile set, falling back to default profiles: default
+2021-01-21 14:10:04.694  INFO 10284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-21 14:10:04.695  INFO 10284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 14:10:04.695  INFO 10284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 14:10:04.695  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-01-21 14:10:04.695  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-21 14:10:04.695  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-21 14:10:04.696  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-01-21 14:10:04.756  INFO 10284 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-01-21 14:10:04.759  INFO 10284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring embedded WebApplicationContext
+2021-01-21 14:10:04.759  INFO 10284 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 308 ms
+2021-01-21 14:10:04.923  INFO 10284 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:10:04.965  INFO 10284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 14:10:04.975  INFO 10284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/crm'
+2021-01-21 14:10:04.978  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : Started CrmApplication in 0.556 seconds (JVM running for 128.032)
+2021-01-21 14:10:04.980  INFO 10284 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-21 14:10:08.410  INFO 10284 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 14:10:08.411  INFO 10284 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 14:10:08.412  INFO 10284 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-21 14:10:08.413  INFO 10284 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-01-21 14:10:08.442  INFO 10284 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-01-21 14:10:30.437  INFO 10284 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:10:30.437  INFO 10284 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-01-21 14:10:30.444  INFO 10284 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-01-21 14:10:30.614  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : Starting CrmApplication using Java 1.8.0_261 on OS-20190908SAIG with PID 10284 (E:\crm\crm\target\classes started by Administrator in E:\crm\crm)
+2021-01-21 14:10:30.614  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : No active profile set, falling back to default profiles: default
+2021-01-21 14:10:30.846  INFO 10284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-21 14:10:30.847  INFO 10284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 14:10:30.847  INFO 10284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 14:10:30.848  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-01-21 14:10:30.848  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-21 14:10:30.848  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-21 14:10:30.848  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-01-21 14:10:30.911  INFO 10284 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-01-21 14:10:30.914  INFO 10284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring embedded WebApplicationContext
+2021-01-21 14:10:30.914  INFO 10284 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 297 ms
+2021-01-21 14:10:31.048  INFO 10284 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:10:31.086  INFO 10284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 14:10:31.094  INFO 10284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/crm'
+2021-01-21 14:10:31.098  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : Started CrmApplication in 0.507 seconds (JVM running for 154.151)
+2021-01-21 14:10:31.099  INFO 10284 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-21 14:10:34.420  INFO 10284 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 14:10:34.421  INFO 10284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 14:10:34.421  INFO 10284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-21 14:10:34.423  INFO 10284 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-01-21 14:10:34.451  INFO 10284 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-01-21 14:10:54.539  INFO 10284 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:10:54.540  INFO 10284 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-01-21 14:10:54.547  INFO 10284 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-01-21 14:10:54.691  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : Starting CrmApplication using Java 1.8.0_261 on OS-20190908SAIG with PID 10284 (E:\crm\crm\target\classes started by Administrator in E:\crm\crm)
+2021-01-21 14:10:54.691  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : No active profile set, falling back to default profiles: default
+2021-01-21 14:10:54.837 DEBUG 10284 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [E:\crm\crm\target\classes\com\sureli\crm\mapper\TbDictionaryMapper.class]
+2021-01-21 14:10:54.838 DEBUG 10284 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'tbDictionaryMapper' and 'com.sureli.crm.mapper.TbDictionaryMapper' mapperInterface
+2021-01-21 14:10:54.838 DEBUG 10284 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'tbDictionaryMapper'.
+2021-01-21 14:10:54.905  INFO 10284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-21 14:10:54.905  INFO 10284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 14:10:54.905  INFO 10284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 14:10:54.906  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-01-21 14:10:54.906  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-21 14:10:54.906  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-21 14:10:54.906  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-01-21 14:10:54.963  INFO 10284 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-01-21 14:10:54.966  INFO 10284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring embedded WebApplicationContext
+2021-01-21 14:10:54.966  INFO 10284 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 273 ms
+2021-01-21 14:10:54.998 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed configuration file: 'URL [classpath:mybatis/mybatis-config.xml]'
+2021-01-21 14:10:55.008 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbClientMapper.xml]'
+2021-01-21 14:10:55.017 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbDictionaryMapper.xml]'
+2021-01-21 14:10:55.026 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceActionMapper.xml]'
+2021-01-21 14:10:55.034 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceMapper.xml]'
+2021-01-21 14:10:55.041 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleMapper.xml]'
+2021-01-21 14:10:55.049 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleResourceMapper.xml]'
+2021-01-21 14:10:55.057 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserMapper.xml]'
+2021-01-21 14:10:55.065 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserRoleMapper.xml]'
+2021-01-21 14:10:55.095  INFO 10284 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:10:55.131  INFO 10284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 14:10:55.139  INFO 10284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/crm'
+2021-01-21 14:10:55.142  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : Started CrmApplication in 0.472 seconds (JVM running for 178.196)
+2021-01-21 14:10:55.144  INFO 10284 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-21 14:10:59.633  INFO 10284 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 14:10:59.634  INFO 10284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 14:10:59.635  INFO 10284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-21 14:10:59.637 DEBUG 10284 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:10:59.637 DEBUG 10284 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d4cb476] was not registered for synchronization because synchronization is not active
+2021-01-21 14:10:59.637  INFO 10284 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-01-21 14:10:59.665  INFO 10284 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2021-01-21 14:10:59.665 DEBUG 10284 --- [http-nio-8080-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1298352953 wrapping com.mysql.cj.jdbc.ConnectionImpl@7b196e55] will not be managed by Spring
+2021-01-21 14:10:59.669 DEBUG 10284 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d4cb476]
+2021-01-21 14:13:00.994  INFO 10284 --- [Thread-22] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:13:00.994  INFO 10284 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2021-01-21 14:13:01.002  INFO 10284 --- [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2021-01-21 14:13:01.121  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : Starting CrmApplication using Java 1.8.0_261 on OS-20190908SAIG with PID 10284 (E:\crm\crm\target\classes started by Administrator in E:\crm\crm)
+2021-01-21 14:13:01.121  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : No active profile set, falling back to default profiles: default
+2021-01-21 14:13:01.273 DEBUG 10284 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [E:\crm\crm\target\classes\com\sureli\crm\mapper\TbDictionaryMapper.class]
+2021-01-21 14:13:01.273 DEBUG 10284 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'tbDictionaryMapper' and 'com.sureli.crm.mapper.TbDictionaryMapper' mapperInterface
+2021-01-21 14:13:01.273 DEBUG 10284 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'tbDictionaryMapper'.
+2021-01-21 14:13:01.341  INFO 10284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-21 14:13:01.342  INFO 10284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 14:13:01.342  INFO 10284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 14:13:01.342  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-01-21 14:13:01.342  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-21 14:13:01.342  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-21 14:13:01.343  INFO 10284 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-01-21 14:13:01.396  INFO 10284 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-01-21 14:13:01.399  INFO 10284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring embedded WebApplicationContext
+2021-01-21 14:13:01.399  INFO 10284 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 276 ms
+2021-01-21 14:13:01.432 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed configuration file: 'URL [classpath:mybatis/mybatis-config.xml]'
+2021-01-21 14:13:01.441 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbClientMapper.xml]'
+2021-01-21 14:13:01.450 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbDictionaryMapper.xml]'
+2021-01-21 14:13:01.457 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceActionMapper.xml]'
+2021-01-21 14:13:01.464 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceMapper.xml]'
+2021-01-21 14:13:01.471 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleMapper.xml]'
+2021-01-21 14:13:01.479 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleResourceMapper.xml]'
+2021-01-21 14:13:01.487 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserMapper.xml]'
+2021-01-21 14:13:01.494 DEBUG 10284 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserRoleMapper.xml]'
+2021-01-21 14:13:01.526  INFO 10284 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:13:01.559  INFO 10284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 14:13:01.567  INFO 10284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/crm'
+2021-01-21 14:13:01.570  INFO 10284 --- [restartedMain] com.sureli.crm.CrmApplication            : Started CrmApplication in 0.473 seconds (JVM running for 304.624)
+2021-01-21 14:13:01.572  INFO 10284 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-21 14:13:07.051  INFO 10284 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 14:13:07.051  INFO 10284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 14:13:07.052  INFO 10284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-21 14:13:07.053 DEBUG 10284 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:07.054 DEBUG 10284 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d07316c] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:07.054  INFO 10284 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2021-01-21 14:13:07.082  INFO 10284 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2021-01-21 14:13:07.082 DEBUG 10284 --- [http-nio-8080-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@701980187 wrapping com.mysql.cj.jdbc.ConnectionImpl@4dbf861c] will not be managed by Spring
+2021-01-21 14:13:07.085 DEBUG 10284 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d07316c]
+2021-01-21 14:13:20.290 DEBUG 10284 --- [http-nio-8080-exec-9] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:20.290 DEBUG 10284 --- [http-nio-8080-exec-9] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2feb5554] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:20.291 DEBUG 10284 --- [http-nio-8080-exec-9] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@556580569 wrapping com.mysql.cj.jdbc.ConnectionImpl@4dbf861c] will not be managed by Spring
+2021-01-21 14:13:20.293 DEBUG 10284 --- [http-nio-8080-exec-9] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2feb5554]
+2021-01-21 14:13:21.649 DEBUG 10284 --- [http-nio-8080-exec-6] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:21.649 DEBUG 10284 --- [http-nio-8080-exec-6] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28cb00f7] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:21.650 DEBUG 10284 --- [http-nio-8080-exec-6] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@638385054 wrapping com.mysql.cj.jdbc.ConnectionImpl@4dbf861c] will not be managed by Spring
+2021-01-21 14:13:21.651 DEBUG 10284 --- [http-nio-8080-exec-6] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28cb00f7]
+2021-01-21 14:13:22.489 DEBUG 10284 --- [http-nio-8080-exec-5] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:22.489 DEBUG 10284 --- [http-nio-8080-exec-5] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63c8ade3] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:22.490 DEBUG 10284 --- [http-nio-8080-exec-5] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1829724138 wrapping com.mysql.cj.jdbc.ConnectionImpl@4dbf861c] will not be managed by Spring
+2021-01-21 14:13:22.492 DEBUG 10284 --- [http-nio-8080-exec-5] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63c8ade3]
+2021-01-21 14:13:23.195 DEBUG 10284 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:23.195 DEBUG 10284 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@450c5306] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:23.195 DEBUG 10284 --- [http-nio-8080-exec-2] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1271637463 wrapping com.mysql.cj.jdbc.ConnectionImpl@4dbf861c] will not be managed by Spring
+2021-01-21 14:13:23.197 DEBUG 10284 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@450c5306]
+2021-01-21 14:13:23.433 DEBUG 10284 --- [http-nio-8080-exec-10] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:23.434 DEBUG 10284 --- [http-nio-8080-exec-10] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@443ab0c9] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:23.434 DEBUG 10284 --- [http-nio-8080-exec-10] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1258116670 wrapping com.mysql.cj.jdbc.ConnectionImpl@4dbf861c] will not be managed by Spring
+2021-01-21 14:13:23.437 DEBUG 10284 --- [http-nio-8080-exec-10] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@443ab0c9]
+2021-01-21 14:13:23.649 DEBUG 10284 --- [http-nio-8080-exec-8] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:23.649 DEBUG 10284 --- [http-nio-8080-exec-8] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5417a298] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:23.649 DEBUG 10284 --- [http-nio-8080-exec-8] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1523598954 wrapping com.mysql.cj.jdbc.ConnectionImpl@4dbf861c] will not be managed by Spring
+2021-01-21 14:13:23.651 DEBUG 10284 --- [http-nio-8080-exec-8] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5417a298]
+2021-01-21 14:13:23.832 DEBUG 10284 --- [http-nio-8080-exec-7] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:23.833 DEBUG 10284 --- [http-nio-8080-exec-7] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@211b63fd] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:23.833 DEBUG 10284 --- [http-nio-8080-exec-7] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@802986414 wrapping com.mysql.cj.jdbc.ConnectionImpl@4dbf861c] will not be managed by Spring
+2021-01-21 14:13:23.834 DEBUG 10284 --- [http-nio-8080-exec-7] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@211b63fd]
+2021-01-21 14:13:24.042 DEBUG 10284 --- [http-nio-8080-exec-4] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:24.043 DEBUG 10284 --- [http-nio-8080-exec-4] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59d750ca] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:24.043 DEBUG 10284 --- [http-nio-8080-exec-4] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1460708736 wrapping com.mysql.cj.jdbc.ConnectionImpl@4dbf861c] will not be managed by Spring
+2021-01-21 14:13:24.044 DEBUG 10284 --- [http-nio-8080-exec-4] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@59d750ca]
+2021-01-21 14:13:24.242 DEBUG 10284 --- [http-nio-8080-exec-3] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:24.242 DEBUG 10284 --- [http-nio-8080-exec-3] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a5b6d53] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:24.243 DEBUG 10284 --- [http-nio-8080-exec-3] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1419544680 wrapping com.mysql.cj.jdbc.ConnectionImpl@4dbf861c] will not be managed by Spring
+2021-01-21 14:13:24.244 DEBUG 10284 --- [http-nio-8080-exec-3] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a5b6d53]
+2021-01-21 14:13:24.443 DEBUG 10284 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:24.444 DEBUG 10284 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@738f49fe] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:24.444 DEBUG 10284 --- [http-nio-8080-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@2024861290 wrapping com.mysql.cj.jdbc.ConnectionImpl@4dbf861c] will not be managed by Spring
+2021-01-21 14:13:24.445 DEBUG 10284 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@738f49fe]
+2021-01-21 14:13:24.665 DEBUG 10284 --- [http-nio-8080-exec-9] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:24.665 DEBUG 10284 --- [http-nio-8080-exec-9] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@513bb25a] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:24.665 DEBUG 10284 --- [http-nio-8080-exec-9] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1835357255 wrapping com.mysql.cj.jdbc.ConnectionImpl@4dbf861c] will not be managed by Spring
+2021-01-21 14:13:24.666 DEBUG 10284 --- [http-nio-8080-exec-9] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@513bb25a]
+2021-01-21 14:13:24.866 DEBUG 10284 --- [http-nio-8080-exec-6] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:24.866 DEBUG 10284 --- [http-nio-8080-exec-6] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6731f1a5] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:24.866 DEBUG 10284 --- [http-nio-8080-exec-6] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@395155724 wrapping com.mysql.cj.jdbc.ConnectionImpl@4dbf861c] will not be managed by Spring
+2021-01-21 14:13:24.867 DEBUG 10284 --- [http-nio-8080-exec-6] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6731f1a5]
+2021-01-21 14:13:27.178  INFO 10284 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-01-21 14:13:27.895  INFO 10284 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:13:27.896  INFO 10284 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2021-01-21 14:13:27.902  INFO 10284 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2021-01-21 14:13:34.273  INFO 11864 --- [restartedMain] com.sureli.crm.CrmApplication            : Starting CrmApplication using Java 1.8.0_261 on OS-20190908SAIG with PID 11864 (E:\crm\crm\target\classes started by Administrator in E:\crm\crm)
+2021-01-21 14:13:34.276  INFO 11864 --- [restartedMain] com.sureli.crm.CrmApplication            : No active profile set, falling back to default profiles: default
+2021-01-21 14:13:34.326  INFO 11864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-21 14:13:34.327  INFO 11864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-21 14:13:34.860 DEBUG 11864 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [E:\crm\crm\target\classes\com\sureli\crm\mapper\TbDictionaryMapper.class]
+2021-01-21 14:13:34.861 DEBUG 11864 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'tbDictionaryMapper' and 'com.sureli.crm.mapper.TbDictionaryMapper' mapperInterface
+2021-01-21 14:13:34.862 DEBUG 11864 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'tbDictionaryMapper'.
+2021-01-21 14:13:35.169  INFO 11864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-21 14:13:35.177  INFO 11864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 14:13:35.178  INFO 11864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 14:13:35.179  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-01-21 14:13:35.180  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-21 14:13:35.180  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-21 14:13:35.183  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-01-21 14:13:35.396  INFO 11864 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-01-21 14:13:35.401  INFO 11864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring embedded WebApplicationContext
+2021-01-21 14:13:35.401  INFO 11864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1074 ms
+2021-01-21 14:13:35.590 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed configuration file: 'URL [classpath:mybatis/mybatis-config.xml]'
+2021-01-21 14:13:35.653 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbClientMapper.xml]'
+2021-01-21 14:13:35.671 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbDictionaryMapper.xml]'
+2021-01-21 14:13:35.685 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceActionMapper.xml]'
+2021-01-21 14:13:35.698 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceMapper.xml]'
+2021-01-21 14:13:35.717 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleMapper.xml]'
+2021-01-21 14:13:35.729 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleResourceMapper.xml]'
+2021-01-21 14:13:35.741 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserMapper.xml]'
+2021-01-21 14:13:35.751 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserRoleMapper.xml]'
+2021-01-21 14:13:35.866  INFO 11864 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:13:36.022  INFO 11864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 14:13:36.121  INFO 11864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/crm'
+2021-01-21 14:13:36.131  INFO 11864 --- [restartedMain] com.sureli.crm.CrmApplication            : Started CrmApplication in 2.16 seconds (JVM running for 3.518)
+2021-01-21 14:13:41.047  INFO 11864 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 14:13:41.048  INFO 11864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 14:13:41.049  INFO 11864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-21 14:13:41.079 DEBUG 11864 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:41.081 DEBUG 11864 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45d92c13] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:41.096  INFO 11864 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-21 14:13:42.222  INFO 11864 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-21 14:13:42.224 DEBUG 11864 --- [http-nio-8080-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@309922161 wrapping com.mysql.cj.jdbc.ConnectionImpl@56c21e50] will not be managed by Spring
+2021-01-21 14:13:42.253 DEBUG 11864 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45d92c13]
+2021-01-21 14:13:46.851 DEBUG 11864 --- [http-nio-8080-exec-9] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:46.852 DEBUG 11864 --- [http-nio-8080-exec-9] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72d6006d] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:46.853 DEBUG 11864 --- [http-nio-8080-exec-9] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@2081546311 wrapping com.mysql.cj.jdbc.ConnectionImpl@56c21e50] will not be managed by Spring
+2021-01-21 14:13:46.855 DEBUG 11864 --- [http-nio-8080-exec-9] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72d6006d]
+2021-01-21 14:13:47.715 DEBUG 11864 --- [http-nio-8080-exec-6] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:47.716 DEBUG 11864 --- [http-nio-8080-exec-6] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@306357c3] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:47.717 DEBUG 11864 --- [http-nio-8080-exec-6] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1050980287 wrapping com.mysql.cj.jdbc.ConnectionImpl@56c21e50] will not be managed by Spring
+2021-01-21 14:13:47.718 DEBUG 11864 --- [http-nio-8080-exec-6] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@306357c3]
+2021-01-21 14:13:48.298 DEBUG 11864 --- [http-nio-8080-exec-5] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:48.299 DEBUG 11864 --- [http-nio-8080-exec-5] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5316ab6e] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:48.299 DEBUG 11864 --- [http-nio-8080-exec-5] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1574002556 wrapping com.mysql.cj.jdbc.ConnectionImpl@56c21e50] will not be managed by Spring
+2021-01-21 14:13:48.301 DEBUG 11864 --- [http-nio-8080-exec-5] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5316ab6e]
+2021-01-21 14:13:57.385 DEBUG 11864 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:57.386 DEBUG 11864 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48fb351e] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:57.386 DEBUG 11864 --- [http-nio-8080-exec-2] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@361970126 wrapping com.mysql.cj.jdbc.ConnectionImpl@56c21e50] will not be managed by Spring
+2021-01-21 14:13:57.388 DEBUG 11864 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48fb351e]
+2021-01-21 14:13:57.972 DEBUG 11864 --- [http-nio-8080-exec-10] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:57.972 DEBUG 11864 --- [http-nio-8080-exec-10] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@100814b5] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:57.973 DEBUG 11864 --- [http-nio-8080-exec-10] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@516942020 wrapping com.mysql.cj.jdbc.ConnectionImpl@56c21e50] will not be managed by Spring
+2021-01-21 14:13:57.976 DEBUG 11864 --- [http-nio-8080-exec-10] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@100814b5]
+2021-01-21 14:13:58.170 DEBUG 11864 --- [http-nio-8080-exec-8] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:58.171 DEBUG 11864 --- [http-nio-8080-exec-8] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fdda1fd] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:58.171 DEBUG 11864 --- [http-nio-8080-exec-8] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@343427751 wrapping com.mysql.cj.jdbc.ConnectionImpl@56c21e50] will not be managed by Spring
+2021-01-21 14:13:58.173 DEBUG 11864 --- [http-nio-8080-exec-8] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fdda1fd]
+2021-01-21 14:13:58.361 DEBUG 11864 --- [http-nio-8080-exec-7] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:58.361 DEBUG 11864 --- [http-nio-8080-exec-7] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e5436e6] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:58.361 DEBUG 11864 --- [http-nio-8080-exec-7] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1208890618 wrapping com.mysql.cj.jdbc.ConnectionImpl@56c21e50] will not be managed by Spring
+2021-01-21 14:13:58.363 DEBUG 11864 --- [http-nio-8080-exec-7] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e5436e6]
+2021-01-21 14:13:58.529 DEBUG 11864 --- [http-nio-8080-exec-4] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:58.530 DEBUG 11864 --- [http-nio-8080-exec-4] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a640f4d] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:58.530 DEBUG 11864 --- [http-nio-8080-exec-4] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1688464497 wrapping com.mysql.cj.jdbc.ConnectionImpl@56c21e50] will not be managed by Spring
+2021-01-21 14:13:58.532 DEBUG 11864 --- [http-nio-8080-exec-4] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6a640f4d]
+2021-01-21 14:13:58.707 DEBUG 11864 --- [http-nio-8080-exec-3] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:13:58.707 DEBUG 11864 --- [http-nio-8080-exec-3] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72f18e83] was not registered for synchronization because synchronization is not active
+2021-01-21 14:13:58.707 DEBUG 11864 --- [http-nio-8080-exec-3] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1824229746 wrapping com.mysql.cj.jdbc.ConnectionImpl@56c21e50] will not be managed by Spring
+2021-01-21 14:13:58.709 DEBUG 11864 --- [http-nio-8080-exec-3] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@72f18e83]
+2021-01-21 14:14:38.004  INFO 11864 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:14:38.005  INFO 11864 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-21 14:14:38.013  INFO 11864 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-21 14:14:38.175  INFO 11864 --- [restartedMain] com.sureli.crm.CrmApplication            : Starting CrmApplication using Java 1.8.0_261 on OS-20190908SAIG with PID 11864 (E:\crm\crm\target\classes started by Administrator in E:\crm\crm)
+2021-01-21 14:14:38.176  INFO 11864 --- [restartedMain] com.sureli.crm.CrmApplication            : No active profile set, falling back to default profiles: default
+2021-01-21 14:14:38.357 DEBUG 11864 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [E:\crm\crm\target\classes\com\sureli\crm\mapper\TbDictionaryMapper.class]
+2021-01-21 14:14:38.357 DEBUG 11864 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'tbDictionaryMapper' and 'com.sureli.crm.mapper.TbDictionaryMapper' mapperInterface
+2021-01-21 14:14:38.357 DEBUG 11864 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'tbDictionaryMapper'.
+2021-01-21 14:14:38.427  INFO 11864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-21 14:14:38.428  INFO 11864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 14:14:38.428  INFO 11864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 14:14:38.428  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-01-21 14:14:38.428  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-21 14:14:38.428  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-21 14:14:38.429  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-01-21 14:14:38.497  INFO 11864 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-01-21 14:14:38.500  INFO 11864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring embedded WebApplicationContext
+2021-01-21 14:14:38.500  INFO 11864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 321 ms
+2021-01-21 14:14:38.537 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed configuration file: 'URL [classpath:mybatis/mybatis-config.xml]'
+2021-01-21 14:14:38.549 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbClientMapper.xml]'
+2021-01-21 14:14:38.560 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbDictionaryMapper.xml]'
+2021-01-21 14:14:38.569 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceActionMapper.xml]'
+2021-01-21 14:14:38.578 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceMapper.xml]'
+2021-01-21 14:14:38.587 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleMapper.xml]'
+2021-01-21 14:14:38.596 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleResourceMapper.xml]'
+2021-01-21 14:14:38.605 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserMapper.xml]'
+2021-01-21 14:14:38.613 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserRoleMapper.xml]'
+2021-01-21 14:14:38.650  INFO 11864 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:14:38.693  INFO 11864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 14:14:38.702  INFO 11864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/crm'
+2021-01-21 14:14:38.706  INFO 11864 --- [restartedMain] com.sureli.crm.CrmApplication            : Started CrmApplication in 0.557 seconds (JVM running for 66.093)
+2021-01-21 14:14:38.708  INFO 11864 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-21 14:14:40.002  INFO 11864 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 14:14:40.003  INFO 11864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 14:14:40.004  INFO 11864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-21 14:14:40.006 DEBUG 11864 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:14:40.006 DEBUG 11864 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d2ea986] was not registered for synchronization because synchronization is not active
+2021-01-21 14:14:40.006  INFO 11864 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-01-21 14:14:40.035  INFO 11864 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-01-21 14:14:40.035 DEBUG 11864 --- [http-nio-8080-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@20228475 wrapping com.mysql.cj.jdbc.ConnectionImpl@4803d508] will not be managed by Spring
+2021-01-21 14:14:40.056 DEBUG 11864 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d2ea986]
+2021-01-21 14:14:40.097 ERROR 11864 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/crm] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and active_flag = 1' at line 9
+### The error may exist in file [E:\crm\crm\target\classes\mybatis\mappers\TbDictionaryMapper.xml]
+### The error may involve com.sureli.crm.mapper.TbDictionaryMapper.selectByExample-Inline
+### The error occurred while setting parameters
+### SQL: select                 row_id, dictionary_parent_id, dictionary_value,dictionary_info,dictionary_order, active_flag, create_by,      create_date, update_by, update_date         from tb_dictionary           and active_flag = 1
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and active_flag = 1' at line 9
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and active_flag = 1' at line 9] with root cause
+
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and active_flag = 1' at line 9
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.22.jar:8.0.22]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.6.jar:3.5.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_261]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.6.jar:2.0.6]
+	at com.sun.proxy.$Proxy54.selectList(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224) ~[mybatis-spring-2.0.6.jar:2.0.6]
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85) ~[mybatis-3.5.6.jar:3.5.6]
+	at com.sun.proxy.$Proxy70.selectByExample(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_261]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.3.jar:5.3.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.3.jar:5.3.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.3.jar:5.3.3]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.3.jar:5.3.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.3.jar:5.3.3]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.3.jar:5.3.3]
+	at com.sun.proxy.$Proxy71.selectByExample(Unknown Source) ~[na:na]
+	at com.sureli.crm.service.impl.TbDictionaryImpl.finall(TbDictionaryImpl.java:23) ~[classes/:na]
+	at com.sureli.crm.hello.controller.HelloController.goAdd(HelloController.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_261]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.3.jar:5.3.3]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.3.jar:5.3.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_261]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_261]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_261]
+
+2021-01-21 14:14:51.514 DEBUG 11864 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:14:51.514 DEBUG 11864 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a657202] was not registered for synchronization because synchronization is not active
+2021-01-21 14:14:51.515 DEBUG 11864 --- [http-nio-8080-exec-2] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@77765950 wrapping com.mysql.cj.jdbc.ConnectionImpl@4803d508] will not be managed by Spring
+2021-01-21 14:14:51.516 DEBUG 11864 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@a657202]
+2021-01-21 14:14:52.026  INFO 11864 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:14:52.026  INFO 11864 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-01-21 14:14:52.033  INFO 11864 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-01-21 14:14:52.198  INFO 11864 --- [restartedMain] com.sureli.crm.CrmApplication            : Starting CrmApplication using Java 1.8.0_261 on OS-20190908SAIG with PID 11864 (E:\crm\crm\target\classes started by Administrator in E:\crm\crm)
+2021-01-21 14:14:52.198  INFO 11864 --- [restartedMain] com.sureli.crm.CrmApplication            : No active profile set, falling back to default profiles: default
+2021-01-21 14:14:52.357 DEBUG 11864 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [E:\crm\crm\target\classes\com\sureli\crm\mapper\TbDictionaryMapper.class]
+2021-01-21 14:14:52.357 DEBUG 11864 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'tbDictionaryMapper' and 'com.sureli.crm.mapper.TbDictionaryMapper' mapperInterface
+2021-01-21 14:14:52.358 DEBUG 11864 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'tbDictionaryMapper'.
+2021-01-21 14:14:52.426  INFO 11864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-21 14:14:52.427  INFO 11864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 14:14:52.427  INFO 11864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 14:14:52.427  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-01-21 14:14:52.427  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-21 14:14:52.428  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-21 14:14:52.428  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-01-21 14:14:52.492  INFO 11864 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-01-21 14:14:52.495  INFO 11864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring embedded WebApplicationContext
+2021-01-21 14:14:52.496  INFO 11864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 296 ms
+2021-01-21 14:14:52.530 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed configuration file: 'URL [classpath:mybatis/mybatis-config.xml]'
+2021-01-21 14:14:52.542 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbClientMapper.xml]'
+2021-01-21 14:14:52.551 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbDictionaryMapper.xml]'
+2021-01-21 14:14:52.561 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceActionMapper.xml]'
+2021-01-21 14:14:52.570 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceMapper.xml]'
+2021-01-21 14:14:52.578 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleMapper.xml]'
+2021-01-21 14:14:52.586 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleResourceMapper.xml]'
+2021-01-21 14:14:52.596 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserMapper.xml]'
+2021-01-21 14:14:52.604 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserRoleMapper.xml]'
+2021-01-21 14:14:52.641  INFO 11864 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:14:52.683  INFO 11864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 14:14:52.692  INFO 11864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/crm'
+2021-01-21 14:14:52.695  INFO 11864 --- [restartedMain] com.sureli.crm.CrmApplication            : Started CrmApplication in 0.523 seconds (JVM running for 80.082)
+2021-01-21 14:14:52.696  INFO 11864 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-21 14:14:52.730  INFO 11864 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 14:14:52.731  INFO 11864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 14:14:52.731  INFO 11864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-21 14:14:52.733 DEBUG 11864 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:14:52.733 DEBUG 11864 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@255ec3c] was not registered for synchronization because synchronization is not active
+2021-01-21 14:14:52.734  INFO 11864 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-01-21 14:14:52.762  INFO 11864 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-01-21 14:14:52.763 DEBUG 11864 --- [http-nio-8080-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1994036542 wrapping com.mysql.cj.jdbc.ConnectionImpl@5bc3a3d5] will not be managed by Spring
+2021-01-21 14:14:52.765 DEBUG 11864 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@255ec3c]
+2021-01-21 14:14:53.954 DEBUG 11864 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:14:53.954 DEBUG 11864 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4da8eb16] was not registered for synchronization because synchronization is not active
+2021-01-21 14:14:53.955 DEBUG 11864 --- [http-nio-8080-exec-2] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1131355347 wrapping com.mysql.cj.jdbc.ConnectionImpl@5bc3a3d5] will not be managed by Spring
+2021-01-21 14:14:53.957 DEBUG 11864 --- [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4da8eb16]
+2021-01-21 14:19:01.211  INFO 11864 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:19:01.211  INFO 11864 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-01-21 14:19:01.218  INFO 11864 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-01-21 14:19:01.377  INFO 11864 --- [restartedMain] com.sureli.crm.CrmApplication            : Starting CrmApplication using Java 1.8.0_261 on OS-20190908SAIG with PID 11864 (E:\crm\crm\target\classes started by Administrator in E:\crm\crm)
+2021-01-21 14:19:01.377  INFO 11864 --- [restartedMain] com.sureli.crm.CrmApplication            : No active profile set, falling back to default profiles: default
+2021-01-21 14:19:01.536 DEBUG 11864 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [E:\crm\crm\target\classes\com\sureli\crm\mapper\TbDictionaryMapper.class]
+2021-01-21 14:19:01.537 DEBUG 11864 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'tbDictionaryMapper' and 'com.sureli.crm.mapper.TbDictionaryMapper' mapperInterface
+2021-01-21 14:19:01.537 DEBUG 11864 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'tbDictionaryMapper'.
+2021-01-21 14:19:01.601  INFO 11864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-21 14:19:01.602  INFO 11864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 14:19:01.602  INFO 11864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 14:19:01.602  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-01-21 14:19:01.602  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-21 14:19:01.602  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-21 14:19:01.602  INFO 11864 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-01-21 14:19:01.660  INFO 11864 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-01-21 14:19:01.663  INFO 11864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring embedded WebApplicationContext
+2021-01-21 14:19:01.663  INFO 11864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 284 ms
+2021-01-21 14:19:01.695 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed configuration file: 'URL [classpath:mybatis/mybatis-config.xml]'
+2021-01-21 14:19:01.707 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbClientMapper.xml]'
+2021-01-21 14:19:01.716 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbDictionaryMapper.xml]'
+2021-01-21 14:19:01.724 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceActionMapper.xml]'
+2021-01-21 14:19:01.731 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceMapper.xml]'
+2021-01-21 14:19:01.738 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleMapper.xml]'
+2021-01-21 14:19:01.745 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleResourceMapper.xml]'
+2021-01-21 14:19:01.754 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserMapper.xml]'
+2021-01-21 14:19:01.761 DEBUG 11864 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserRoleMapper.xml]'
+2021-01-21 14:19:01.793  INFO 11864 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:19:01.829  INFO 11864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 14:19:01.837  INFO 11864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/crm'
+2021-01-21 14:19:01.841  INFO 11864 --- [restartedMain] com.sureli.crm.CrmApplication            : Started CrmApplication in 0.488 seconds (JVM running for 329.227)
+2021-01-21 14:19:01.842  INFO 11864 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-21 14:19:03.705  INFO 11864 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-01-21 14:19:04.424  INFO 11864 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:25:40.459  INFO 10420 --- [restartedMain] com.sureli.crm.CrmApplication            : Starting CrmApplication using Java 1.8.0_261 on OS-20190908SAIG with PID 10420 (E:\crm\crm\target\classes started by Administrator in E:\crm\crm)
+2021-01-21 14:25:40.461  INFO 10420 --- [restartedMain] com.sureli.crm.CrmApplication            : No active profile set, falling back to default profiles: default
+2021-01-21 14:25:40.512  INFO 10420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-21 14:25:40.512  INFO 10420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-21 14:25:41.059 DEBUG 10420 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [E:\crm\crm\target\classes\com\sureli\crm\mapper\TbDictionaryMapper.class]
+2021-01-21 14:25:41.060 DEBUG 10420 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'tbDictionaryMapper' and 'com.sureli.crm.mapper.TbDictionaryMapper' mapperInterface
+2021-01-21 14:25:41.061 DEBUG 10420 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'tbDictionaryMapper'.
+2021-01-21 14:25:41.397  INFO 10420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-21 14:25:41.405  INFO 10420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 14:25:41.406  INFO 10420 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 14:25:41.408  INFO 10420 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-01-21 14:25:41.408  INFO 10420 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-21 14:25:41.408  INFO 10420 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-21 14:25:41.412  INFO 10420 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-01-21 14:25:41.647  INFO 10420 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-01-21 14:25:41.652  INFO 10420 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring embedded WebApplicationContext
+2021-01-21 14:25:41.652  INFO 10420 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1139 ms
+2021-01-21 14:25:41.838 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed configuration file: 'URL [classpath:mybatis/mybatis-config.xml]'
+2021-01-21 14:25:41.896 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbClientMapper.xml]'
+2021-01-21 14:25:41.915 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbDictionaryMapper.xml]'
+2021-01-21 14:25:41.928 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceActionMapper.xml]'
+2021-01-21 14:25:41.941 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceMapper.xml]'
+2021-01-21 14:25:41.962 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleMapper.xml]'
+2021-01-21 14:25:41.974 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleResourceMapper.xml]'
+2021-01-21 14:25:41.985 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserMapper.xml]'
+2021-01-21 14:25:41.995 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserRoleMapper.xml]'
+2021-01-21 14:25:42.108  INFO 10420 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:25:42.263  INFO 10420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 14:25:42.362  INFO 10420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/crm'
+2021-01-21 14:25:42.372  INFO 10420 --- [restartedMain] com.sureli.crm.CrmApplication            : Started CrmApplication in 2.225 seconds (JVM running for 3.592)
+2021-01-21 14:25:42.741  INFO 10420 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 14:25:42.741  INFO 10420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 14:25:42.742  INFO 10420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-21 14:25:42.772 DEBUG 10420 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:25:42.774 DEBUG 10420 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@782c9653] was not registered for synchronization because synchronization is not active
+2021-01-21 14:25:42.795  INFO 10420 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-21 14:25:43.922  INFO 10420 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-21 14:25:43.925 DEBUG 10420 --- [http-nio-8080-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1803059396 wrapping com.mysql.cj.jdbc.ConnectionImpl@1fe95ee1] will not be managed by Spring
+2021-01-21 14:25:43.954 DEBUG 10420 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@782c9653]
+2021-01-21 14:31:34.266  INFO 10420 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:31:34.267  INFO 10420 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-21 14:31:34.275  INFO 10420 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-21 14:31:34.436  INFO 10420 --- [restartedMain] com.sureli.crm.CrmApplication            : Starting CrmApplication using Java 1.8.0_261 on OS-20190908SAIG with PID 10420 (E:\crm\crm\target\classes started by Administrator in E:\crm\crm)
+2021-01-21 14:31:34.436  INFO 10420 --- [restartedMain] com.sureli.crm.CrmApplication            : No active profile set, falling back to default profiles: default
+2021-01-21 14:31:34.634 DEBUG 10420 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [E:\crm\crm\target\classes\com\sureli\crm\mapper\TbDictionaryMapper.class]
+2021-01-21 14:31:34.635 DEBUG 10420 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'tbDictionaryMapper' and 'com.sureli.crm.mapper.TbDictionaryMapper' mapperInterface
+2021-01-21 14:31:34.635 DEBUG 10420 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'tbDictionaryMapper'.
+2021-01-21 14:31:34.710  INFO 10420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-21 14:31:34.710  INFO 10420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-21 14:31:34.711  INFO 10420 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-21 14:31:34.711  INFO 10420 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.25] using APR version [1.7.0].
+2021-01-21 14:31:34.711  INFO 10420 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-01-21 14:31:34.711  INFO 10420 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-01-21 14:31:34.711  INFO 10420 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1g  21 Apr 2020]
+2021-01-21 14:31:34.788  INFO 10420 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-01-21 14:31:34.794  INFO 10420 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring embedded WebApplicationContext
+2021-01-21 14:31:34.794  INFO 10420 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 355 ms
+2021-01-21 14:31:34.837 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed configuration file: 'URL [classpath:mybatis/mybatis-config.xml]'
+2021-01-21 14:31:34.853 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbClientMapper.xml]'
+2021-01-21 14:31:34.865 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbDictionaryMapper.xml]'
+2021-01-21 14:31:34.876 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceActionMapper.xml]'
+2021-01-21 14:31:34.886 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbResourceMapper.xml]'
+2021-01-21 14:31:34.896 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleMapper.xml]'
+2021-01-21 14:31:34.905 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbRoleResourceMapper.xml]'
+2021-01-21 14:31:34.917 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserMapper.xml]'
+2021-01-21 14:31:34.928 DEBUG 10420 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [E:\crm\crm\target\classes\mybatis\mappers\TbUserRoleMapper.xml]'
+2021-01-21 14:31:34.977  INFO 10420 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:31:35.029  INFO 10420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-21 14:31:35.040  INFO 10420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/crm'
+2021-01-21 14:31:35.044  INFO 10420 --- [restartedMain] com.sureli.crm.CrmApplication            : Started CrmApplication in 0.635 seconds (JVM running for 356.263)
+2021-01-21 14:31:35.046  INFO 10420 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-21 14:31:38.700  INFO 10420 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/crm]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-21 14:31:38.701  INFO 10420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-21 14:31:38.702  INFO 10420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-21 14:31:38.707 DEBUG 10420 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:31:38.707 DEBUG 10420 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52991e87] was not registered for synchronization because synchronization is not active
+2021-01-21 14:31:38.723  INFO 10420 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-01-21 14:31:38.751  INFO 10420 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-01-21 14:31:38.751 DEBUG 10420 --- [http-nio-8080-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@255179561 wrapping com.mysql.cj.jdbc.ConnectionImpl@a5cd710] will not be managed by Spring
+2021-01-21 14:31:38.754 DEBUG 10420 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52991e87]
+2021-01-21 14:32:07.315 DEBUG 10420 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:32:07.316 DEBUG 10420 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35ed30] was not registered for synchronization because synchronization is not active
+2021-01-21 14:32:07.317 DEBUG 10420 --- [http-nio-8080-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@415184362 wrapping com.mysql.cj.jdbc.ConnectionImpl@a5cd710] will not be managed by Spring
+2021-01-21 14:32:07.318 DEBUG 10420 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35ed30]
+2021-01-21 14:36:42.477 DEBUG 10420 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2021-01-21 14:36:42.477 DEBUG 10420 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d2f20d] was not registered for synchronization because synchronization is not active
+2021-01-21 14:36:42.478 DEBUG 10420 --- [http-nio-8080-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@939395981 wrapping com.mysql.cj.jdbc.ConnectionImpl@a5cd710] will not be managed by Spring
+2021-01-21 14:36:42.480 DEBUG 10420 --- [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d2f20d]
+2021-01-21 14:43:52.318  INFO 10420 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-21 14:43:52.318  INFO 10420 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-01-21 14:43:52.325  INFO 10420 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
