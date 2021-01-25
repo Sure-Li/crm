@@ -77,7 +77,8 @@ public class HelloController {
 	@GetMapping("/resource")
 	public ModelAndView goResource(ModelAndView modelAndView) {
 		List<TbResource> resourceList= resourceService.findAll();
-		modelAndView.addObject("resourceList", resourceList);
+		modelAndView.addObject("resourceList", resourceList.toString());
+		System.err.println(resourceList);
 		modelAndView.setViewName("resource");
 		return modelAndView;
 	}

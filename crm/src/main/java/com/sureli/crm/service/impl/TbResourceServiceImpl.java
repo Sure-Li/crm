@@ -26,23 +26,23 @@ public class TbResourceServiceImpl implements TbResourceService {
 		Criteria criteria = exampl.createCriteria();
 		criteria.andActiveFlagEqualTo(1);
 		List<TbResource> allList = resourceMapper.selectByExample(exampl);
-		Map<Long, TbResource> cache = new HashMap<Long, TbResource>();
-		for (TbResource resource : allList) {
-			// 判断是否为父菜单
-			if (resource.getResourceParentId()==0) {
-				dictionaryList.add(resource);
-				cache.put(resource.getRowId(), resource);
-			}
-		}
-		
-		for (TbResource resource : allList) {
-			if (resource.getResourceParentId()!= 0) {
-				Long pid = resource.getResourceParentId();
-				TbResource parent = cache.get(pid);
-				parent.getChildren().add(resource);
-			}
-		}
-		return dictionaryList;
+//		Map<Long, TbResource> cache = new HashMap<Long, TbResource>();
+//		for (TbResource resource : allList) {
+//			// 判断是否为父菜单
+//			if (resource.getResourceParentId()==0) {
+//				dictionaryList.add(resource);
+//				cache.put(resource.getRowId(), resource);
+//			}
+//		}
+//		
+//		for (TbResource resource : allList) {
+//			if (resource.getResourceParentId()!= 0) {
+//				Long pid = resource.getResourceParentId();
+//				TbResource parent = cache.get(pid);
+//				parent.getChildren().add(resource);
+//			}
+//		}
+		return allList;
 	}
 
 }

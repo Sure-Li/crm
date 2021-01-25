@@ -15,17 +15,16 @@
 			form = layui.form,
 			layer = layui.layer,
 			treeTable = layui.treeTable;
-		console.log()
+		console.log(o('#hid-list-data').val());
 		// 直接下载后url: './data/table-tree.json',这个配置可能看不到数据，改为data:[],获取自己的实际链接返回json数组
 		var	re = treeTable.render({
 			elem: '#tree-table',
-			data: o('#hid-list-data').val()/* [{"id":1,"pid":0,"title":"1-1"},{"id":2,"pid":0,"title":"1-2"},{"id":3,"pid":0,"title":"1-3"},{"id":4,"pid":1,"title":"1-1-1"},{"id":5,"pid":1,"title":"1-1-2"},{"id":6,"pid":2,"title":"1-2-1"},{"id":7,"pid":2,"title":"1-2-3"},{"id":8,"pid":3,"title":"1-3-1"},{"id":9,"pid":3,"title":"1-3-2"},{"id":10,"pid":4,"title":"1-1-1-1"},{"id":11,"pid":4,"title":"1-1-1-2"}] */,
-			icon_key: 'title',
+			data: ${resourceList}/* [{"id":1,"pid":0,"title":"1-1"},{"id":2,"pid":0,"title":"1-2"},{"id":3,"pid":0,"title":"1-3"},{"id":4,"pid":1,"title":"1-1-1"},{"id":5,"pid":1,"title":"1-1-2"},{"id":6,"pid":2,"title":"1-2-1"},{"id":7,"pid":2,"title":"1-2-3"},{"id":8,"pid":3,"title":"1-3-1"},{"id":9,"pid":3,"title":"1-3-2"},{"id":10,"pid":4,"title":"1-1-1-1"},{"id":11,"pid":4,"title":"1-1-1-2"}] */,
 			is_checkbox: true,
-			checked: {
+			/* checked: {
 				key: 'id',
 				data: [0,1,4,10,11,5,2,6,7,3,8,9],
-			},
+			}, */
 			end: function(e){
 				form.render();
 			},
@@ -33,7 +32,8 @@
 				{
 					key: 'rowId',
 					title: '名称',
-					width: '100px',
+					width: '100px'
+					/* ,
 					template: function(item){
 						if(item.level == 0){
 							return '<span style="color:red;">'+item.title+'</span>';
@@ -42,16 +42,16 @@
 						}else if(item.level == 2){
 							return '<span style="color:#aaa;">'+item.title+'</span>';
 						}
-					}
+					} */
 				},
 				{
-					key: 'id',
+					key: 'resourceName',
 					title: 'ID',
 					width: '100px',
 					align: 'center',
 				},
 				{
-					key: 'pid',
+					key: 'resourceOrder',
 					title: '父ID',
 					width: '100px',
 					align: 'center',

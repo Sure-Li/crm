@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import lombok.ToString;
-@ToString
+import net.sf.json.JSONObject;
+
 public class TbResource {
     private Long rowId;
 
@@ -29,7 +29,7 @@ public class TbResource {
 
     private Date updateDate;
     
-    private List<TbResource> children =new ArrayList<TbResource>();
+//    private List<TbResource> children =new ArrayList<TbResource>();
 
     public Long getRowId() {
         return rowId;
@@ -119,12 +119,17 @@ public class TbResource {
         this.updateDate = updateDate;
     }
 
-	public List<TbResource> getChildren() {
-		return children;
-	}
+//	public List<TbResource> getChildren() {
+//		return children;
+//	}
+//
+//	public void setChildren(List<TbResource> children) {
+//		this.children = children;
+//	}
 
-	public void setChildren(List<TbResource> children) {
-		this.children = children;
+	@Override
+	public String toString() {
+		return JSONObject.fromObject(this).toString();
 	}
     
 }
