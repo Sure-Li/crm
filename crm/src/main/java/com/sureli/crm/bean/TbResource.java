@@ -119,6 +119,14 @@ public class TbResource {
         this.updateDate = updateDate;
     }
 
+	@Override
+	public String toString() {
+		return "TbResource [id=" + rowId + ", pid=" + resourceParentId + ", resourceName="
+				+ resourceName + ", resourceType=" + resourceType + ", resourceOrder=" + resourceOrder
+				+ ", resourceUrl=" + resourceUrl + ", activeFlag=" + activeFlag + ", createBy=" + createBy
+				+ ", createDate=" + createDate + ", updateBy=" + updateBy + ", updateDate=" + updateDate + "]";
+	}
+
 //	public List<TbResource> getChildren() {
 //		return children;
 //	}
@@ -127,9 +135,9 @@ public class TbResource {
 //		this.children = children;
 //	}
 
-	@Override
-	public String toString() {
+	public String toJSONString() {
 		return JSONObject.fromObject(this).toString();
 	}
+    
     
 }

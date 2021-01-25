@@ -1,5 +1,6 @@
 package com.sureli.crm.hello.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -77,8 +78,12 @@ public class HelloController {
 	@GetMapping("/resource")
 	public ModelAndView goResource(ModelAndView modelAndView) {
 		List<TbResource> resourceList= resourceService.findAll();
-		modelAndView.addObject("resourceList", resourceList.toString());
-		System.err.println(resourceList);
+		List<String> result = new ArrayList<String>();
+		for (TbResource tbResource : resourceList) {
+			result.add(tbResource.toJSONString());
+		}
+		modelAndView.addObject("resourceList", result);
+		System.err.println(result);
 		modelAndView.setViewName("resource");
 		return modelAndView;
 	}
