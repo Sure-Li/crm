@@ -13,6 +13,8 @@ public class TbDictionary {
 
     private String dictionaryValue;
 
+    private String dictionaryInfo;
+
     private Integer dictionaryOrder;
 
     private Integer activeFlag;
@@ -24,8 +26,6 @@ public class TbDictionary {
     private String updateBy;
 
     private Date updateDate;
-
-    private String dictionaryInfo;
     
     private List<TbDictionary> children =new ArrayList<TbDictionary>();
 
@@ -51,6 +51,14 @@ public class TbDictionary {
 
     public void setDictionaryValue(String dictionaryValue) {
         this.dictionaryValue = dictionaryValue == null ? null : dictionaryValue.trim();
+    }
+
+    public String getDictionaryInfo() {
+        return dictionaryInfo;
+    }
+
+    public void setDictionaryInfo(String dictionaryInfo) {
+        this.dictionaryInfo = dictionaryInfo == null ? null : dictionaryInfo.trim();
     }
 
     public Integer getDictionaryOrder() {
@@ -99,14 +107,6 @@ public class TbDictionary {
 
     public void setUpdateDate(Date updateDate) {
         this.updateDate = updateDate;
-    }
-
-    public String getDictionaryInfo() {
-        return dictionaryInfo;
-    }
-
-    public void setDictionaryInfo(String dictionaryInfo) {
-        this.dictionaryInfo = dictionaryInfo == null ? null : dictionaryInfo.trim();
     }
 
 	public List<TbDictionary> getChildren() {

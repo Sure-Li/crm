@@ -2,6 +2,8 @@ package com.sureli.crm.bean;
 
 import java.util.Date;
 
+import lombok.ToString;
+@ToString
 public class TbUser {
     private Long rowId;
 
@@ -172,15 +174,4 @@ public class TbUser {
     public void setUpdateDate(Date updateDate) {
         this.updateDate = updateDate;
     }
-
-	@Override
-	public String toString() {
-		return "TbUser [rowId=" + rowId + ", roleId=" + roleId + ", userName=" + userName + ", userLevel=" + userLevel
-				+ ", userUpperLevelId=" + userUpperLevelId + ", userCode=" + userCode + ", userPassword=" + userPassword
-				+ ", userIsLock=" + userIsLock + ", userLoginCount=" + userLoginCount + ", userLastLoginIp="
-				+ userLastLoginIp + ", userLastLoginTime=" + userLastLoginTime + ", userAvatar=" + userAvatar
-				+ ", activeFlag=" + activeFlag + ", createBy=" + createBy + ", createDate=" + createDate + ", updateBy="
-				+ updateBy + ", updateDate=" + updateDate + "]";
-	}
-    
 }

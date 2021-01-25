@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class TbDictionaryExample {
+public class TbResourceExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
 
-    public TbDictionaryExample() {
+    public TbResourceExample() {
         oredCriteria = new ArrayList<Criteria>();
     }
 
@@ -165,263 +165,323 @@ public class TbDictionaryExample {
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryParentIdIsNull() {
-            addCriterion("dictionary_parent_id is null");
+        public Criteria andResourceParentIdIsNull() {
+            addCriterion("resource_parent_id is null");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryParentIdIsNotNull() {
-            addCriterion("dictionary_parent_id is not null");
+        public Criteria andResourceParentIdIsNotNull() {
+            addCriterion("resource_parent_id is not null");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryParentIdEqualTo(Long value) {
-            addCriterion("dictionary_parent_id =", value, "dictionaryParentId");
+        public Criteria andResourceParentIdEqualTo(Long value) {
+            addCriterion("resource_parent_id =", value, "resourceParentId");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryParentIdNotEqualTo(Long value) {
-            addCriterion("dictionary_parent_id <>", value, "dictionaryParentId");
+        public Criteria andResourceParentIdNotEqualTo(Long value) {
+            addCriterion("resource_parent_id <>", value, "resourceParentId");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryParentIdGreaterThan(Long value) {
-            addCriterion("dictionary_parent_id >", value, "dictionaryParentId");
+        public Criteria andResourceParentIdGreaterThan(Long value) {
+            addCriterion("resource_parent_id >", value, "resourceParentId");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryParentIdGreaterThanOrEqualTo(Long value) {
-            addCriterion("dictionary_parent_id >=", value, "dictionaryParentId");
+        public Criteria andResourceParentIdGreaterThanOrEqualTo(Long value) {
+            addCriterion("resource_parent_id >=", value, "resourceParentId");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryParentIdLessThan(Long value) {
-            addCriterion("dictionary_parent_id <", value, "dictionaryParentId");
+        public Criteria andResourceParentIdLessThan(Long value) {
+            addCriterion("resource_parent_id <", value, "resourceParentId");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryParentIdLessThanOrEqualTo(Long value) {
-            addCriterion("dictionary_parent_id <=", value, "dictionaryParentId");
+        public Criteria andResourceParentIdLessThanOrEqualTo(Long value) {
+            addCriterion("resource_parent_id <=", value, "resourceParentId");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryParentIdIn(List<Long> values) {
-            addCriterion("dictionary_parent_id in", values, "dictionaryParentId");
+        public Criteria andResourceParentIdIn(List<Long> values) {
+            addCriterion("resource_parent_id in", values, "resourceParentId");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryParentIdNotIn(List<Long> values) {
-            addCriterion("dictionary_parent_id not in", values, "dictionaryParentId");
+        public Criteria andResourceParentIdNotIn(List<Long> values) {
+            addCriterion("resource_parent_id not in", values, "resourceParentId");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryParentIdBetween(Long value1, Long value2) {
-            addCriterion("dictionary_parent_id between", value1, value2, "dictionaryParentId");
+        public Criteria andResourceParentIdBetween(Long value1, Long value2) {
+            addCriterion("resource_parent_id between", value1, value2, "resourceParentId");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryParentIdNotBetween(Long value1, Long value2) {
-            addCriterion("dictionary_parent_id not between", value1, value2, "dictionaryParentId");
+        public Criteria andResourceParentIdNotBetween(Long value1, Long value2) {
+            addCriterion("resource_parent_id not between", value1, value2, "resourceParentId");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryValueIsNull() {
-            addCriterion("dictionary_value is null");
+        public Criteria andResourceNameIsNull() {
+            addCriterion("resource_name is null");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryValueIsNotNull() {
-            addCriterion("dictionary_value is not null");
+        public Criteria andResourceNameIsNotNull() {
+            addCriterion("resource_name is not null");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryValueEqualTo(String value) {
-            addCriterion("dictionary_value =", value, "dictionaryValue");
+        public Criteria andResourceNameEqualTo(String value) {
+            addCriterion("resource_name =", value, "resourceName");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryValueNotEqualTo(String value) {
-            addCriterion("dictionary_value <>", value, "dictionaryValue");
+        public Criteria andResourceNameNotEqualTo(String value) {
+            addCriterion("resource_name <>", value, "resourceName");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryValueGreaterThan(String value) {
-            addCriterion("dictionary_value >", value, "dictionaryValue");
+        public Criteria andResourceNameGreaterThan(String value) {
+            addCriterion("resource_name >", value, "resourceName");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryValueGreaterThanOrEqualTo(String value) {
-            addCriterion("dictionary_value >=", value, "dictionaryValue");
+        public Criteria andResourceNameGreaterThanOrEqualTo(String value) {
+            addCriterion("resource_name >=", value, "resourceName");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryValueLessThan(String value) {
-            addCriterion("dictionary_value <", value, "dictionaryValue");
+        public Criteria andResourceNameLessThan(String value) {
+            addCriterion("resource_name <", value, "resourceName");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryValueLessThanOrEqualTo(String value) {
-            addCriterion("dictionary_value <=", value, "dictionaryValue");
+        public Criteria andResourceNameLessThanOrEqualTo(String value) {
+            addCriterion("resource_name <=", value, "resourceName");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryValueLike(String value) {
-            addCriterion("dictionary_value like", value, "dictionaryValue");
+        public Criteria andResourceNameLike(String value) {
+            addCriterion("resource_name like", value, "resourceName");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryValueNotLike(String value) {
-            addCriterion("dictionary_value not like", value, "dictionaryValue");
+        public Criteria andResourceNameNotLike(String value) {
+            addCriterion("resource_name not like", value, "resourceName");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryValueIn(List<String> values) {
-            addCriterion("dictionary_value in", values, "dictionaryValue");
+        public Criteria andResourceNameIn(List<String> values) {
+            addCriterion("resource_name in", values, "resourceName");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryValueNotIn(List<String> values) {
-            addCriterion("dictionary_value not in", values, "dictionaryValue");
+        public Criteria andResourceNameNotIn(List<String> values) {
+            addCriterion("resource_name not in", values, "resourceName");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryValueBetween(String value1, String value2) {
-            addCriterion("dictionary_value between", value1, value2, "dictionaryValue");
+        public Criteria andResourceNameBetween(String value1, String value2) {
+            addCriterion("resource_name between", value1, value2, "resourceName");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryValueNotBetween(String value1, String value2) {
-            addCriterion("dictionary_value not between", value1, value2, "dictionaryValue");
+        public Criteria andResourceNameNotBetween(String value1, String value2) {
+            addCriterion("resource_name not between", value1, value2, "resourceName");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryInfoIsNull() {
-            addCriterion("dictionary_info is null");
+        public Criteria andResourceTypeIsNull() {
+            addCriterion("resource_type is null");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryInfoIsNotNull() {
-            addCriterion("dictionary_info is not null");
+        public Criteria andResourceTypeIsNotNull() {
+            addCriterion("resource_type is not null");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryInfoEqualTo(String value) {
-            addCriterion("dictionary_info =", value, "dictionaryInfo");
+        public Criteria andResourceTypeEqualTo(Integer value) {
+            addCriterion("resource_type =", value, "resourceType");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryInfoNotEqualTo(String value) {
-            addCriterion("dictionary_info <>", value, "dictionaryInfo");
+        public Criteria andResourceTypeNotEqualTo(Integer value) {
+            addCriterion("resource_type <>", value, "resourceType");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryInfoGreaterThan(String value) {
-            addCriterion("dictionary_info >", value, "dictionaryInfo");
+        public Criteria andResourceTypeGreaterThan(Integer value) {
+            addCriterion("resource_type >", value, "resourceType");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryInfoGreaterThanOrEqualTo(String value) {
-            addCriterion("dictionary_info >=", value, "dictionaryInfo");
+        public Criteria andResourceTypeGreaterThanOrEqualTo(Integer value) {
+            addCriterion("resource_type >=", value, "resourceType");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryInfoLessThan(String value) {
-            addCriterion("dictionary_info <", value, "dictionaryInfo");
+        public Criteria andResourceTypeLessThan(Integer value) {
+            addCriterion("resource_type <", value, "resourceType");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryInfoLessThanOrEqualTo(String value) {
-            addCriterion("dictionary_info <=", value, "dictionaryInfo");
+        public Criteria andResourceTypeLessThanOrEqualTo(Integer value) {
+            addCriterion("resource_type <=", value, "resourceType");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryInfoLike(String value) {
-            addCriterion("dictionary_info like", value, "dictionaryInfo");
+        public Criteria andResourceTypeIn(List<Integer> values) {
+            addCriterion("resource_type in", values, "resourceType");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryInfoNotLike(String value) {
-            addCriterion("dictionary_info not like", value, "dictionaryInfo");
+        public Criteria andResourceTypeNotIn(List<Integer> values) {
+            addCriterion("resource_type not in", values, "resourceType");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryInfoIn(List<String> values) {
-            addCriterion("dictionary_info in", values, "dictionaryInfo");
+        public Criteria andResourceTypeBetween(Integer value1, Integer value2) {
+            addCriterion("resource_type between", value1, value2, "resourceType");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryInfoNotIn(List<String> values) {
-            addCriterion("dictionary_info not in", values, "dictionaryInfo");
+        public Criteria andResourceTypeNotBetween(Integer value1, Integer value2) {
+            addCriterion("resource_type not between", value1, value2, "resourceType");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryInfoBetween(String value1, String value2) {
-            addCriterion("dictionary_info between", value1, value2, "dictionaryInfo");
+        public Criteria andResourceOrderIsNull() {
+            addCriterion("resource_order is null");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryInfoNotBetween(String value1, String value2) {
-            addCriterion("dictionary_info not between", value1, value2, "dictionaryInfo");
+        public Criteria andResourceOrderIsNotNull() {
+            addCriterion("resource_order is not null");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryOrderIsNull() {
-            addCriterion("dictionary_order is null");
+        public Criteria andResourceOrderEqualTo(Integer value) {
+            addCriterion("resource_order =", value, "resourceOrder");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryOrderIsNotNull() {
-            addCriterion("dictionary_order is not null");
+        public Criteria andResourceOrderNotEqualTo(Integer value) {
+            addCriterion("resource_order <>", value, "resourceOrder");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryOrderEqualTo(Integer value) {
-            addCriterion("dictionary_order =", value, "dictionaryOrder");
+        public Criteria andResourceOrderGreaterThan(Integer value) {
+            addCriterion("resource_order >", value, "resourceOrder");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryOrderNotEqualTo(Integer value) {
-            addCriterion("dictionary_order <>", value, "dictionaryOrder");
+        public Criteria andResourceOrderGreaterThanOrEqualTo(Integer value) {
+            addCriterion("resource_order >=", value, "resourceOrder");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryOrderGreaterThan(Integer value) {
-            addCriterion("dictionary_order >", value, "dictionaryOrder");
+        public Criteria andResourceOrderLessThan(Integer value) {
+            addCriterion("resource_order <", value, "resourceOrder");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryOrderGreaterThanOrEqualTo(Integer value) {
-            addCriterion("dictionary_order >=", value, "dictionaryOrder");
+        public Criteria andResourceOrderLessThanOrEqualTo(Integer value) {
+            addCriterion("resource_order <=", value, "resourceOrder");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryOrderLessThan(Integer value) {
-            addCriterion("dictionary_order <", value, "dictionaryOrder");
+        public Criteria andResourceOrderIn(List<Integer> values) {
+            addCriterion("resource_order in", values, "resourceOrder");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryOrderLessThanOrEqualTo(Integer value) {
-            addCriterion("dictionary_order <=", value, "dictionaryOrder");
+        public Criteria andResourceOrderNotIn(List<Integer> values) {
+            addCriterion("resource_order not in", values, "resourceOrder");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryOrderIn(List<Integer> values) {
-            addCriterion("dictionary_order in", values, "dictionaryOrder");
+        public Criteria andResourceOrderBetween(Integer value1, Integer value2) {
+            addCriterion("resource_order between", value1, value2, "resourceOrder");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryOrderNotIn(List<Integer> values) {
-            addCriterion("dictionary_order not in", values, "dictionaryOrder");
+        public Criteria andResourceOrderNotBetween(Integer value1, Integer value2) {
+            addCriterion("resource_order not between", value1, value2, "resourceOrder");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryOrderBetween(Integer value1, Integer value2) {
-            addCriterion("dictionary_order between", value1, value2, "dictionaryOrder");
+        public Criteria andResourceUrlIsNull() {
+            addCriterion("resource_url is null");
             return (Criteria) this;
         }
 
-        public Criteria andDictionaryOrderNotBetween(Integer value1, Integer value2) {
-            addCriterion("dictionary_order not between", value1, value2, "dictionaryOrder");
+        public Criteria andResourceUrlIsNotNull() {
+            addCriterion("resource_url is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andResourceUrlEqualTo(String value) {
+            addCriterion("resource_url =", value, "resourceUrl");
+            return (Criteria) this;
+        }
+
+        public Criteria andResourceUrlNotEqualTo(String value) {
+            addCriterion("resource_url <>", value, "resourceUrl");
+            return (Criteria) this;
+        }
+
+        public Criteria andResourceUrlGreaterThan(String value) {
+            addCriterion("resource_url >", value, "resourceUrl");
+            return (Criteria) this;
+        }
+
+        public Criteria andResourceUrlGreaterThanOrEqualTo(String value) {
+            addCriterion("resource_url >=", value, "resourceUrl");
+            return (Criteria) this;
+        }
+
+        public Criteria andResourceUrlLessThan(String value) {
+            addCriterion("resource_url <", value, "resourceUrl");
+            return (Criteria) this;
+        }
+
+        public Criteria andResourceUrlLessThanOrEqualTo(String value) {
+            addCriterion("resource_url <=", value, "resourceUrl");
+            return (Criteria) this;
+        }
+
+        public Criteria andResourceUrlLike(String value) {
+            addCriterion("resource_url like", value, "resourceUrl");
+            return (Criteria) this;
+        }
+
+        public Criteria andResourceUrlNotLike(String value) {
+            addCriterion("resource_url not like", value, "resourceUrl");
+            return (Criteria) this;
+        }
+
+        public Criteria andResourceUrlIn(List<String> values) {
+            addCriterion("resource_url in", values, "resourceUrl");
+            return (Criteria) this;
+        }
+
+        public Criteria andResourceUrlNotIn(List<String> values) {
+            addCriterion("resource_url not in", values, "resourceUrl");
+            return (Criteria) this;
+        }
+
+        public Criteria andResourceUrlBetween(String value1, String value2) {
+            addCriterion("resource_url between", value1, value2, "resourceUrl");
+            return (Criteria) this;
+        }
+
+        public Criteria andResourceUrlNotBetween(String value1, String value2) {
+            addCriterion("resource_url not between", value1, value2, "resourceUrl");
             return (Criteria) this;
         }
 

@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.sureli.crm.mapper.TbDictionaryMapper">
-  <resultMap id="BaseResultMap" type="com.sureli.crm.bean.TbDictionary">
+<mapper namespace="com.sureli.crm.mapper.TbResourceMapper">
+  <resultMap id="BaseResultMap" type="com.sureli.crm.bean.TbResource">
     <id column="row_id" jdbcType="BIGINT" property="rowId" />
-    <result column="dictionary_parent_id" jdbcType="BIGINT" property="dictionaryParentId" />
-    <result column="dictionary_value" jdbcType="VARCHAR" property="dictionaryValue" />
-    <result column="dictionary_info" jdbcType="VARCHAR" property="dictionaryInfo" />
-    <result column="dictionary_order" jdbcType="INTEGER" property="dictionaryOrder" />
+    <result column="resource_parent_id" jdbcType="BIGINT" property="resourceParentId" />
+    <result column="resource_name" jdbcType="VARCHAR" property="resourceName" />
+    <result column="resource_type" jdbcType="INTEGER" property="resourceType" />
+    <result column="resource_order" jdbcType="INTEGER" property="resourceOrder" />
+    <result column="resource_url" jdbcType="VARCHAR" property="resourceUrl" />
     <result column="active_flag" jdbcType="INTEGER" property="activeFlag" />
     <result column="create_by" jdbcType="VARCHAR" property="createBy" />
     <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
     <result column="update_by" jdbcType="VARCHAR" property="updateBy" />
     <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
-  </resultMap>
-  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.sureli.crm.bean.TbDictionary">
-    <result column="dictionary_info" jdbcType="LONGVARCHAR" property="dictionaryInfo" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -75,21 +73,16 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    row_id, dictionary_parent_id, dictionary_value,dictionary_info,dictionary_order, active_flag, create_by, 
-    create_date, update_by, update_date
+    row_id, resource_parent_id, resource_name, resource_type, resource_order, resource_url, 
+    active_flag, create_by, create_date, update_by, update_date
   </sql>
-  <sql id="Blob_Column_List">
-    dictionary_info
-  </sql>
-  <select id="selectByExampleWithBLOBs" parameterType="com.sureli.crm.bean.TbDictionaryExample" resultMap="ResultMapWithBLOBs">
+  <select id="selectByExample" parameterType="com.sureli.crm.bean.TbResourceExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
-    ,
-    <include refid="Blob_Column_List" />
-    from tb_dictionary
+    from tb_resource
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -97,62 +90,52 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByExample" parameterType="com.sureli.crm.bean.TbDictionaryExample" resultMap="BaseResultMap">
-    select
-    <if test="distinct">
-      distinct
-    </if>
-    <include refid="Base_Column_List" />
-    from tb_dictionary
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-    <if test="orderByClause != null">
-      order by ${orderByClause}
-    </if>
-  </select>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    ,
-    <include refid="Blob_Column_List" />
-    from tb_dictionary
+    from tb_resource
     where row_id = #{rowId,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
-    delete from tb_dictionary
+    delete from tb_resource
     where row_id = #{rowId,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.sureli.crm.bean.TbDictionaryExample">
-    delete from tb_dictionary
+  <delete id="deleteByExample" parameterType="com.sureli.crm.bean.TbResourceExample">
+    delete from tb_resource
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.sureli.crm.bean.TbDictionary">
-    insert into tb_dictionary (row_id, dictionary_parent_id, dictionary_value, 
-      dictionary_order, active_flag, create_by, 
-      create_date, update_by, update_date, 
-      dictionary_info)
-    values (#{rowId,jdbcType=BIGINT}, #{dictionaryParentId,jdbcType=BIGINT}, #{dictionaryValue,jdbcType=VARCHAR}, 
-      #{dictionaryOrder,jdbcType=INTEGER}, #{activeFlag,jdbcType=INTEGER}, #{createBy,jdbcType=VARCHAR}, 
-      #{createDate,jdbcType=TIMESTAMP}, #{updateBy,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP}, 
-      #{dictionaryInfo,jdbcType=LONGVARCHAR})
+  <insert id="insert" parameterType="com.sureli.crm.bean.TbResource">
+    insert into tb_resource (row_id, resource_parent_id, resource_name, 
+      resource_type, resource_order, resource_url, 
+      active_flag, create_by, create_date, 
+      update_by, update_date)
+    values (#{rowId,jdbcType=BIGINT}, #{resourceParentId,jdbcType=BIGINT}, #{resourceName,jdbcType=VARCHAR}, 
+      #{resourceType,jdbcType=INTEGER}, #{resourceOrder,jdbcType=INTEGER}, #{resourceUrl,jdbcType=VARCHAR}, 
+      #{activeFlag,jdbcType=INTEGER}, #{createBy,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, 
+      #{updateBy,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.sureli.crm.bean.TbDictionary">
-    insert into tb_dictionary
+  <insert id="insertSelective" parameterType="com.sureli.crm.bean.TbResource">
+    insert into tb_resource
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="rowId != null">
         row_id,
       </if>
-      <if test="dictionaryParentId != null">
-        dictionary_parent_id,
+      <if test="resourceParentId != null">
+        resource_parent_id,
       </if>
-      <if test="dictionaryValue != null">
-        dictionary_value,
+      <if test="resourceName != null">
+        resource_name,
       </if>
-      <if test="dictionaryOrder != null">
-        dictionary_order,
+      <if test="resourceType != null">
+        resource_type,
+      </if>
+      <if test="resourceOrder != null">
+        resource_order,
+      </if>
+      <if test="resourceUrl != null">
+        resource_url,
       </if>
       <if test="activeFlag != null">
         active_flag,
@@ -169,22 +152,25 @@
       <if test="updateDate != null">
         update_date,
       </if>
-      <if test="dictionaryInfo != null">
-        dictionary_info,
-      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="rowId != null">
         #{rowId,jdbcType=BIGINT},
       </if>
-      <if test="dictionaryParentId != null">
-        #{dictionaryParentId,jdbcType=BIGINT},
+      <if test="resourceParentId != null">
+        #{resourceParentId,jdbcType=BIGINT},
       </if>
-      <if test="dictionaryValue != null">
-        #{dictionaryValue,jdbcType=VARCHAR},
+      <if test="resourceName != null">
+        #{resourceName,jdbcType=VARCHAR},
       </if>
-      <if test="dictionaryOrder != null">
-        #{dictionaryOrder,jdbcType=INTEGER},
+      <if test="resourceType != null">
+        #{resourceType,jdbcType=INTEGER},
+      </if>
+      <if test="resourceOrder != null">
+        #{resourceOrder,jdbcType=INTEGER},
+      </if>
+      <if test="resourceUrl != null">
+        #{resourceUrl,jdbcType=VARCHAR},
       </if>
       <if test="activeFlag != null">
         #{activeFlag,jdbcType=INTEGER},
@@ -201,31 +187,34 @@
       <if test="updateDate != null">
         #{updateDate,jdbcType=TIMESTAMP},
       </if>
-      <if test="dictionaryInfo != null">
-        #{dictionaryInfo,jdbcType=LONGVARCHAR},
-      </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.sureli.crm.bean.TbDictionaryExample" resultType="java.lang.Long">
-    select count(*) from tb_dictionary
+  <select id="countByExample" parameterType="com.sureli.crm.bean.TbResourceExample" resultType="java.lang.Long">
+    select count(*) from tb_resource
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
-    update tb_dictionary
+    update tb_resource
     <set>
       <if test="record.rowId != null">
         row_id = #{record.rowId,jdbcType=BIGINT},
       </if>
-      <if test="record.dictionaryParentId != null">
-        dictionary_parent_id = #{record.dictionaryParentId,jdbcType=BIGINT},
+      <if test="record.resourceParentId != null">
+        resource_parent_id = #{record.resourceParentId,jdbcType=BIGINT},
       </if>
-      <if test="record.dictionaryValue != null">
-        dictionary_value = #{record.dictionaryValue,jdbcType=VARCHAR},
+      <if test="record.resourceName != null">
+        resource_name = #{record.resourceName,jdbcType=VARCHAR},
       </if>
-      <if test="record.dictionaryOrder != null">
-        dictionary_order = #{record.dictionaryOrder,jdbcType=INTEGER},
+      <if test="record.resourceType != null">
+        resource_type = #{record.resourceType,jdbcType=INTEGER},
+      </if>
+      <if test="record.resourceOrder != null">
+        resource_order = #{record.resourceOrder,jdbcType=INTEGER},
+      </if>
+      <if test="record.resourceUrl != null">
+        resource_url = #{record.resourceUrl,jdbcType=VARCHAR},
       </if>
       <if test="record.activeFlag != null">
         active_flag = #{record.activeFlag,jdbcType=INTEGER},
@@ -242,36 +231,19 @@
       <if test="record.updateDate != null">
         update_date = #{record.updateDate,jdbcType=TIMESTAMP},
       </if>
-      <if test="record.dictionaryInfo != null">
-        dictionary_info = #{record.dictionaryInfo,jdbcType=LONGVARCHAR},
-      </if>
     </set>
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByExampleWithBLOBs" parameterType="map">
-    update tb_dictionary
-    set row_id = #{record.rowId,jdbcType=BIGINT},
-      dictionary_parent_id = #{record.dictionaryParentId,jdbcType=BIGINT},
-      dictionary_value = #{record.dictionaryValue,jdbcType=VARCHAR},
-      dictionary_order = #{record.dictionaryOrder,jdbcType=INTEGER},
-      active_flag = #{record.activeFlag,jdbcType=INTEGER},
-      create_by = #{record.createBy,jdbcType=VARCHAR},
-      create_date = #{record.createDate,jdbcType=TIMESTAMP},
-      update_by = #{record.updateBy,jdbcType=VARCHAR},
-      update_date = #{record.updateDate,jdbcType=TIMESTAMP},
-      dictionary_info = #{record.dictionaryInfo,jdbcType=LONGVARCHAR}
-    <if test="_parameter != null">
-      <include refid="Update_By_Example_Where_Clause" />
-    </if>
-  </update>
   <update id="updateByExample" parameterType="map">
-    update tb_dictionary
+    update tb_resource
     set row_id = #{record.rowId,jdbcType=BIGINT},
-      dictionary_parent_id = #{record.dictionaryParentId,jdbcType=BIGINT},
-      dictionary_value = #{record.dictionaryValue,jdbcType=VARCHAR},
-      dictionary_order = #{record.dictionaryOrder,jdbcType=INTEGER},
+      resource_parent_id = #{record.resourceParentId,jdbcType=BIGINT},
+      resource_name = #{record.resourceName,jdbcType=VARCHAR},
+      resource_type = #{record.resourceType,jdbcType=INTEGER},
+      resource_order = #{record.resourceOrder,jdbcType=INTEGER},
+      resource_url = #{record.resourceUrl,jdbcType=VARCHAR},
       active_flag = #{record.activeFlag,jdbcType=INTEGER},
       create_by = #{record.createBy,jdbcType=VARCHAR},
       create_date = #{record.createDate,jdbcType=TIMESTAMP},
@@ -281,17 +253,23 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.sureli.crm.bean.TbDictionary">
-    update tb_dictionary
+  <update id="updateByPrimaryKeySelective" parameterType="com.sureli.crm.bean.TbResource">
+    update tb_resource
     <set>
-      <if test="dictionaryParentId != null">
-        dictionary_parent_id = #{dictionaryParentId,jdbcType=BIGINT},
+      <if test="resourceParentId != null">
+        resource_parent_id = #{resourceParentId,jdbcType=BIGINT},
       </if>
-      <if test="dictionaryValue != null">
-        dictionary_value = #{dictionaryValue,jdbcType=VARCHAR},
+      <if test="resourceName != null">
+        resource_name = #{resourceName,jdbcType=VARCHAR},
       </if>
-      <if test="dictionaryOrder != null">
-        dictionary_order = #{dictionaryOrder,jdbcType=INTEGER},
+      <if test="resourceType != null">
+        resource_type = #{resourceType,jdbcType=INTEGER},
+      </if>
+      <if test="resourceOrder != null">
+        resource_order = #{resourceOrder,jdbcType=INTEGER},
+      </if>
+      <if test="resourceUrl != null">
+        resource_url = #{resourceUrl,jdbcType=VARCHAR},
       </if>
       <if test="activeFlag != null">
         active_flag = #{activeFlag,jdbcType=INTEGER},
@@ -308,30 +286,16 @@
       <if test="updateDate != null">
         update_date = #{updateDate,jdbcType=TIMESTAMP},
       </if>
-      <if test="dictionaryInfo != null">
-        dictionary_info = #{dictionaryInfo,jdbcType=LONGVARCHAR},
-      </if>
     </set>
     where row_id = #{rowId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.sureli.crm.bean.TbDictionary">
-    update tb_dictionary
-    set dictionary_parent_id = #{dictionaryParentId,jdbcType=BIGINT},
-      dictionary_value = #{dictionaryValue,jdbcType=VARCHAR},
-      dictionary_order = #{dictionaryOrder,jdbcType=INTEGER},
-      active_flag = #{activeFlag,jdbcType=INTEGER},
-      create_by = #{createBy,jdbcType=VARCHAR},
-      create_date = #{createDate,jdbcType=TIMESTAMP},
-      update_by = #{updateBy,jdbcType=VARCHAR},
-      update_date = #{updateDate,jdbcType=TIMESTAMP},
-      dictionary_info = #{dictionaryInfo,jdbcType=LONGVARCHAR}
-    where row_id = #{rowId,jdbcType=BIGINT}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.sureli.crm.bean.TbDictionary">
-    update tb_dictionary
-    set dictionary_parent_id = #{dictionaryParentId,jdbcType=BIGINT},
-      dictionary_value = #{dictionaryValue,jdbcType=VARCHAR},
-      dictionary_order = #{dictionaryOrder,jdbcType=INTEGER},
+  <update id="updateByPrimaryKey" parameterType="com.sureli.crm.bean.TbResource">
+    update tb_resource
+    set resource_parent_id = #{resourceParentId,jdbcType=BIGINT},
+      resource_name = #{resourceName,jdbcType=VARCHAR},
+      resource_type = #{resourceType,jdbcType=INTEGER},
+      resource_order = #{resourceOrder,jdbcType=INTEGER},
+      resource_url = #{resourceUrl,jdbcType=VARCHAR},
       active_flag = #{activeFlag,jdbcType=INTEGER},
       create_by = #{createBy,jdbcType=VARCHAR},
       create_date = #{createDate,jdbcType=TIMESTAMP},
