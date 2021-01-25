@@ -60,6 +60,7 @@ public class HelloController {
 		pageQuery.setPageNum(pageNum);
 		pageQuery.setPageSize(pageSize);
 		PageResult pageResult = userService.findPage(pageQuery);
+		System.err.println(pageResult);
 		LayuiResult result = new LayuiResult(pageResult.getTotalSize(), pageResult.getContent());
 		return result;
 	}

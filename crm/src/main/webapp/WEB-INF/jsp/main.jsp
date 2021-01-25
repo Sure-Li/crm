@@ -143,22 +143,20 @@ layui.use([ 'form', 'layer','table' ], function() {
 	//执行一个 table 实例
 	  table.render({
 	    elem: '#demo'
-	    ,height: 420
 	    ,url: 'page' //数据接口
 	    ,title: '用户表'
 	    ,page: true //开启分页
-	    ,totalRow: true //开启合计行
 	    ,cols: [[ //表头
 	      {type: 'checkbox', fixed: 'left'}
-	      ,{field: 'rowId', title: 'ID', width:80, sort: true, fixed: 'left', totalRowText: '合计：'}
+	      ,{field: 'rowId', title: 'ID', width:80, sort: true, fixed: 'left'}
 	      ,{field: 'userName', title: '用户名', width:80}
-	      ,{field: 'userLevel', title: '角色等级', width: 160, sort: true, totalRow: true}
+	      ,{field: 'userLevel', title: '角色等级', width: 160, sort: true}
 	      ,{field: 'userCode', title: '用户账号', width:160, sort: true}
-	      ,{field: 'score', title: '评分', width: 80, sort: true, totalRow: true}
+	      ,{field: 'score', title: '评分', width: 80, sort: true}
 	      ,{field: 'city', title: '城市', width:150} 
 	      ,{field: 'sign', title: '签名', width: 200}
 	      ,{field: 'classify', title: '职业', width: 100}
-	      ,{field: 'wealth', title: '财富', width: 135, sort: true, totalRow: true}
+	      ,{field: 'wealth', title: '财富', width: 135, sort: true}
 	    ]]
 	  });
 });

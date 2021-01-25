@@ -63,6 +63,6 @@ public class TbUserServiceImpl implements TbUserService {
         PageHelper.startPage(pageNum, pageSize);
         List<TbUser> sysMenus = userMapper.selectByPage();
         System.out.println("||||||||||||"+sysMenus);
-        return new PageInfo<TbUser>(sysMenus.subList(0, sysMenus.size()));
+        return new PageInfo<TbUser>(sysMenus);
     }
 }

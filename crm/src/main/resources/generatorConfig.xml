@@ -49,6 +49,6 @@
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 
-		<table schema="" tableName="tb_system_setting"></table>
+		<table schema="" tableName="tb_resource"></table>
 	</context>
 </generatorConfiguration> 
