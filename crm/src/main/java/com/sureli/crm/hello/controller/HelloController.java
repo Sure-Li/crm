@@ -6,15 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.sureli.crm.bean.TbDictionary;
+import com.sureli.crm.bean.TbResource;
 import com.sureli.crm.bean.TbSystemSetting;
 import com.sureli.crm.bean.TbUser;
 import com.sureli.crm.layuiresult.LayuiResult;
 import com.sureli.crm.service.TbDictionaryService;
+import com.sureli.crm.service.TbResourceService;
 import com.sureli.crm.service.TbSystemSettingService;
 import com.sureli.crm.service.TbUserService;
 import com.sureli.crm.util.page.PageRequest;
@@ -28,6 +29,8 @@ public class HelloController {
 	TbUserService userService;
 	@Autowired
 	TbSystemSettingService systemSettingService;
+	@Autowired
+	TbResourceService resourceService;
 	
 	@RequestMapping({ "/", "index" })
 	public ModelAndView goIndex(ModelAndView modelAndView) {
@@ -73,6 +76,8 @@ public class HelloController {
 	}
 	@GetMapping("/resource")
 	public ModelAndView goResource(ModelAndView modelAndView) {
+		List<TbResource> resourceList= resourceService.findAll();
+		modelAndView.addObject("resourceList", resourceList);
 		modelAndView.setViewName("resource");
 		return modelAndView;
 	}

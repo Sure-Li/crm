@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
- 
+ <input type="hidden" id="hid-list-data" value="${resourceList}">
 <button type="button" class="layui-btn layui-btn-primary layui-btn-sm get-checked">获取选中</button>
 		<button type="button" class="layui-btn layui-btn-primary layui-btn-sm refresh">刷新（新增）</button>
 		<button type="button" class="layui-btn layui-btn-primary layui-btn-sm open-all">全部展开</button>
@@ -15,10 +15,11 @@
 			form = layui.form,
 			layer = layui.layer,
 			treeTable = layui.treeTable;
+		console.log()
 		// 直接下载后url: './data/table-tree.json',这个配置可能看不到数据，改为data:[],获取自己的实际链接返回json数组
 		var	re = treeTable.render({
 			elem: '#tree-table',
-			data: [{"id":1,"pid":0,"title":"1-1"},{"id":2,"pid":0,"title":"1-2"},{"id":3,"pid":0,"title":"1-3"},{"id":4,"pid":1,"title":"1-1-1"},{"id":5,"pid":1,"title":"1-1-2"},{"id":6,"pid":2,"title":"1-2-1"},{"id":7,"pid":2,"title":"1-2-3"},{"id":8,"pid":3,"title":"1-3-1"},{"id":9,"pid":3,"title":"1-3-2"},{"id":10,"pid":4,"title":"1-1-1-1"},{"id":11,"pid":4,"title":"1-1-1-2"}],
+			data: o('#hid-list-data').val()/* [{"id":1,"pid":0,"title":"1-1"},{"id":2,"pid":0,"title":"1-2"},{"id":3,"pid":0,"title":"1-3"},{"id":4,"pid":1,"title":"1-1-1"},{"id":5,"pid":1,"title":"1-1-2"},{"id":6,"pid":2,"title":"1-2-1"},{"id":7,"pid":2,"title":"1-2-3"},{"id":8,"pid":3,"title":"1-3-1"},{"id":9,"pid":3,"title":"1-3-2"},{"id":10,"pid":4,"title":"1-1-1-1"},{"id":11,"pid":4,"title":"1-1-1-2"}] */,
 			icon_key: 'title',
 			is_checkbox: true,
 			checked: {
@@ -30,7 +31,7 @@
 			},
 			cols: [
 				{
-					key: 'title',
+					key: 'rowId',
 					title: '名称',
 					width: '100px',
 					template: function(item){

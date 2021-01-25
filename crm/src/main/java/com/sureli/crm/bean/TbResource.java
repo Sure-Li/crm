@@ -1,7 +1,11 @@
 package com.sureli.crm.bean;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
+import lombok.ToString;
+@ToString
 public class TbResource {
     private Long rowId;
 
@@ -24,6 +28,8 @@ public class TbResource {
     private String updateBy;
 
     private Date updateDate;
+    
+    private List<TbResource> children =new ArrayList<TbResource>();
 
     public Long getRowId() {
         return rowId;
@@ -112,4 +118,13 @@ public class TbResource {
     public void setUpdateDate(Date updateDate) {
         this.updateDate = updateDate;
     }
+
+	public List<TbResource> getChildren() {
+		return children;
+	}
+
+	public void setChildren(List<TbResource> children) {
+		this.children = children;
+	}
+    
 }
