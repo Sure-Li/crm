@@ -4,7 +4,9 @@ import com.sureli.crm.bean.TbUser;
 import com.sureli.crm.bean.TbUserExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface TbUserMapper {
     long countByExample(TbUserExample example);
 
@@ -17,6 +19,8 @@ public interface TbUserMapper {
     int insertSelective(TbUser record);
 
     List<TbUser> selectByExample(TbUserExample example);
+    
+    List<TbUser> selectByPage();
 
     TbUser selectByPrimaryKey(Long rowId);
 

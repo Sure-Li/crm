@@ -1,16 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<link rel="stylesheet" href="assert/layui/css/layui.css">
-</head>
-<body>
 	<fieldset class="layui-elem-field"
-		style="width: 45%; border: groove; margin-left: 20px">
+		style="width: 98%; border: groove; margin-left: 20px">
 		<legend>客户基本信息</legend>
 		<div class="layui-field-box">
 			<form class="layui-form" action="">
@@ -74,13 +66,11 @@
 			</form>
 		</div>
 	</fieldset>
-
-</body>
-<script type="text/javascript" src="assert/layui/layui.js"></script>
 <script type="text/javascript">
 	//Demo
 	layui.use([ 'form' ], function() {
 		var form = layui.form;
+		form.render();
 		var $ = layui.$;
 		form.on('select()', function(data) {
 			console.log(data.elem); //得到select原始DOM对象

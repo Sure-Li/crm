@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* 思途 修改 --2020/1/29 开始 */
+body {
+	background-color: #F2F2F2;
+}
+
+.layui-fluid {
+	padding: 15px;
+}
+
+.layui-search-form .layui-input, .layui-select, .layui-textarea {
+	height: 30px;
+	line-height: 1.3;
+	line-height: 38px\9;
+	border-width: 1px;
+	border-style: solid;
+	background-color: #fff;
+	border-radius: 2px;
+}
+
+.layui-search-form .layui-form-select {
+	width: 120px;
+}
+
+.layui-search-form .layui-btn+.layui-btn {
+	margin-left: 0px;
+}
+
+.layui-card-header .layui-btn-add {
+	float: right;
+	margin-top: 7px;
+}
+
+.layui-layer-content .layui-form {
+	padding: 20px 30px 0px 30px;
+}
+/* 匹配checkbox唯一校验 样式 开始 */
+.layui-form-danger .layui-form-checkbox span {
+	background-color: red;
+}
+
+.layui-form-danger .layui-form-checkbox i {
+	border-color: red;
+}
+/* 匹配checkbox唯一校验 样式 结束 */
+/* 思途 修改 --2020/1/29 结束 */
+.padding-left-30 {
+	padding-left: 30px;
+}
+
+.layui-card-header .btn-left {
+	float: right;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+/*配合 iconpicker 使用*/
+.layui-iconpicker-body {
+	min-width: 300px;
+}
+
+.field-required {
+	margin-left: 5px;
+	color: red;
+}
+
+.layui-form-item .layui-rate .layui-inline {
+	margin: 0px;
+}
+
+.layui-side-menu .layui-nav .layui-nav-itemed>.layui-nav-child a {
+	margin-left: 30px;
+}
+
+.layadmin-side-fixed .layadmin-side-shrink .layui-side {
+	left: 0;
+	width: 220px;
+}
+
+.layadmin-side-fixed .layadmin-side-shrink .layui-layout-admin .layui-logo {
+	width: 220px;
+	background-image: none;
+}
+
+.layadmin-side-fixed .layadmin-side-shrink .layui-layout-admin .layui-logo span {
+	display: block;
+}
+
+.layadmin-side-fixed .layui-side-menu .layui-nav {
+	width: 220px;
+	margin-top: 50px;
+	background: 0 0;
+}
+
+.layadmin-side-fixed .layadmin-side-shrink .layui-side-menu .layui-nav-item cite, .layadmin-side-fixed .layadmin-side-shrink .layui-side-menu .layui-nav>.layui-nav-item>a .layui-nav-more {
+	display: block;
+	padding: 0px;
+	width: 0;
+}
+
+.layadmin-side-fixed .layadmin-side-shrink .layui-side-menu .layui-nav>.layui-nav-item>.layui-nav-child {
+	display: none;
+}
+
+.layadmin-side-fixed .layadmin-side-shrink .layui-side-menu .layui-nav .layui-nav-itemed>.layui-nav-child {
+	display: block;
+	padding: 5px 0;
+}
+
+/*个人资源页面-开始*/
+.layadmin-homepage-font {
+	font-weight: 600;
+	color: rgb(43, 66, 91);
+	font-size: 1.2em;
+}
+
+.layadmin-homepage-panel .text-center, .layadmin-maillist-fluid .layadmin-text-center {
+	text-align: center;
+}
+
+.layadmin-homepage-content {
+	margin-left: 15px;
+	padding: 0px;
+}
+.layui-upload-img {
+    width: 350px;
+    height: 350px;
+    margin: 0 10px 10px 0;
+}
+/*个人资源页面-结束*/
