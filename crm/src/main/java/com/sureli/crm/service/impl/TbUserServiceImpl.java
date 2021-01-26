@@ -1,5 +1,6 @@
 package com.sureli.crm.service.impl;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -65,4 +66,30 @@ public class TbUserServiceImpl implements TbUserService {
         System.out.println("||||||||||||"+sysMenus);
         return new PageInfo<TbUser>(sysMenus);
     }
+
+	@Override
+	public Integer doAddUser(TbUser user, String createBy) {
+		user.setActiveFlag(1);
+		user.setCreateBy(createBy);
+		user.setCreateDate(new Date());
+		return userMapper.insertSelective(user);
+	}
+
+	@Override
+	public Integer doEditUserById(TbUser user) {
+		TbUserExample example = new TbUserExample();
+		Criteria criteria = example.createCriteria();
+		criteria.andRowIdEqualTo(user.getRowId());
+		return userMapper.updateByExampleSelective(user, example);
+	}
+
+	@Override
+	public Integer doDeleteUserById(Long rowId) {
+		TbUser user = userMapper.selectByPrimaryKey(rowId);
+		user.setActiveFlag(0);
+		TbUserExample example = new TbUserExample();
+		Criteria criteria = example.createCriteria();
+		criteria.andRowIdEqualTo(user.getRowId());
+		return userMapper.updateByExampleSelective(user, example);
+	}
 }

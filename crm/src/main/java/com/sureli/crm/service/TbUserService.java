@@ -13,4 +13,10 @@ public interface TbUserService {
 
 	PageResult findPage(PageRequest pageQuery);
 
+	Integer doAddUser(TbUser user, String createBy);
+
+	Integer doEditUserById(TbUser user);
+
+	Integer doDeleteUserById(Long rowId);
+
 }

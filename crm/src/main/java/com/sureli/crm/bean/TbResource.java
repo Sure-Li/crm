@@ -135,9 +135,5 @@ public class TbResource {
 //		this.children = children;
 //	}
 
-	public String toJSONString() {
-		return JSONObject.fromObject(this).toString();
-	}
-    
     
 }

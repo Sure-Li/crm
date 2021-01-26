@@ -22,6 +22,8 @@ import com.sureli.crm.service.TbUserService;
 import com.sureli.crm.util.page.PageRequest;
 import com.sureli.crm.util.page.PageResult;
 
+import net.sf.json.JSONObject;
+
 @RestController
 public class HelloController {
 	@Autowired
@@ -80,7 +82,9 @@ public class HelloController {
 		List<TbResource> resourceList= resourceService.findAll();
 		List<String> result = new ArrayList<String>();
 		for (TbResource tbResource : resourceList) {
-			result.add(tbResource.toJSONString());
+			String get =JSONObject. fromObject(tbResource).toString();
+			String out = get.replace("rowId", "id").replace("resourceParentId", "pid");
+			result.add(out);
 		}
 		modelAndView.addObject("resourceList", result);
 		System.err.println(result);
