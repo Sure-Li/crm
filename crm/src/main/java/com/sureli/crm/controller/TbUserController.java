@@ -39,4 +39,9 @@ public class TbUserController {
 	public Integer doDeleteUserById(@PathVariable Long rowId) {
 		return userService.doDeleteUserById(rowId);
 	}
+	@GetMapping
+	public ModelAndView goIndex(ModelAndView modelAndView) {
+		modelAndView.setViewName("user/user_index");
+		return modelAndView;
+	}
 }

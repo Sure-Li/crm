@@ -15,15 +15,14 @@
 			form = layui.form,
 			layer = layui.layer,
 			treeTable = layui.treeTable;
-		console.log(o('#hid-list-data').val());
 		// 直接下载后url: './data/table-tree.json',这个配置可能看不到数据，改为data:[],获取自己的实际链接返回json数组
 		var	re = treeTable.render({
 			elem: '#tree-table',
-			data:  ${resourceList} /* [{"id":1,"pid":0,"title":"1-1"},{"id":2,"pid":0,"title":"1-2"},{"id":3,"pid":0,"title":"1-3"},{"id":4,"pid":1,"title":"1-1-1"},{"id":5,"pid":1,"title":"1-1-2"},{"id":6,"pid":2,"title":"1-2-1"},{"id":7,"pid":2,"title":"1-2-3"},{"id":8,"pid":3,"title":"1-3-1"},{"id":9,"pid":3,"title":"1-3-2"},{"id":10,"pid":4,"title":"1-1-1-1"},{"id":11,"pid":4,"title":"1-1-1-2"}] */,
+			data:  ${resourceList},
 			icon_key: 'id',
 			is_checkbox: true,
 			 checked: {
-				key: 'id',
+				key: 'id'
 				/* data: [0,1,4,10,11,5,2,6,7,3,8,9], */
 			}, 
 			end: function(e){

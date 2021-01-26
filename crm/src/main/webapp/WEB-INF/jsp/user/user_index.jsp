@@ -1,79 +1,140 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>用户首页</title>
-<base href="http://localhost:8080/layui/">
- <!-- 引入layui的样式表 -->
-<link rel="stylesheet" href="assets/layui/css/layui.css">
-</head>
-<body>
-<div class="layui-fluid">
-	<div class="layui-row layui-col-space15">
-		<div class="layui-col-md12">
-			<div class="layui-card">
-				<div class="layui-card-header">
-					角色管理
-					<!-- 使用自定义标签在页面上判断 button或是超链接 是否可以显示 -->
-					<!-- 新增按钮 开始 -->
-					<button type="button" class="layui-btn layui-btn-sm layui-btn-add" id="btn_add">
-						<i class="layui-icon layui-icon-addition"></i>新增
-					</button>
-					<!-- 新增按钮 结束 -->
-				</div>
-				<div class="layui-card-body">
-					<!-- 搜索表单 开始  -->
-					<form class="layui-form" id="form_search" lay-filter="form_search">
-						<div class="layui-search-form">
-							<div class="layui-inline">
-								<select name="roleType">
-									<option value=>角色类型</option>
-									<option value="1">超级角色</option>
-									<option value="0">普通角色</option>
-								</select>
-							</div>
-							<div class="layui-inline">
-								<input name="roleName" placeholder="角色名称" autocomplete="off" class="layui-input">
-							</div>
-							<div class="layui-inline">
-								<!-- 搜索按钮 -开始 -->
-								<button lay-submit lay-filter="btn_search" title="搜索" class="layui-btn layui-btn-primary layui-btn-sm layui-tips" >
-									<i class="layui-icon layui-icon-search"></i>
-								</button>
-								<!-- 搜索按钮 -结束 -->
-								<!-- 重置按钮 - 开始 -->
-								<!--想自动弹出tip信息 两个条件  class="layui-tips" title="信息" -->
-								<button type="reset" title="重置" class="layui-btn layui-btn-primary layui-btn-sm layui-tips">
-									<i class="layui-icon layui-icon-refresh"></i>
-								</button>
-								<!-- 重置按钮 - 结束 -->
-							</div>
-						</div>
-					</form>
-					<!-- 搜索表单 结束  -->
-					<!-- 页面表格 开始  -->
-					<table id="list_table" lay-filter="table_user_filter"></table>
-					<!-- 页面表格 结束  -->
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="layadmin-tabsbody-item layui-show" >
+	<button type="button" class="layui-btn " id="btn_add">
+		<i class="layui-icon">&#xe654;</i>新增
+	</button>
 </div>
- <!-- layui的templet的 模板 -->
-<script type="text/html" id="userSexTpl">
-  {{#  if(d.userSex==0){ }}
-       <span class="layui-badge layui-bg-orange"> 女</span>
-  {{#  } else { }}
-       <span class="layui-badge layui-bg-blue">男</span>
-  {{#  } }}
+<div class="layadmin-tabsbody-item layui-show" 
+	style="margin-top: 30px">
+	<table class="layui-hide" id="demo" lay-filter="table_user_filter"></table>
+<script type="text/html" id="handleBar">
+  <a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon">&#xe642;</i>编辑</a>
+  <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon">&#xe640;</i>删除</a>
 </script>
-<!-- layui的toolbar的模板 -->
-<script type="text/html" id="actionBar">
-    <a class="layui-btn layui-btn-xs" lay-event="edit"><i class="layui-icon layui-icon-util"/>修改</a>
-    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"/>删除</a>
+<script type="text/javascript">
+layui.use([ 'util','table', 'form','laydate'], function() {
+	var table = layui.table;
+	var form = layui.form;
+	var util = layui.util;
+	var $ = layui.$;
+	var laydate = layui.laydate;
+	var form_index =null;
+	initTableData();
+	
+	$('#btn_add').off('clcik').on('click', function() {
+		opeanBaseForm();
+	});
+	function opeanBaseForm(){
+		return $.ajax({
+			url : 'user/form',
+			type : 'get',
+			success : function(data) {
+			form_index = layer.open({
+					type : 1,
+					title : '用户表单',
+					content : data,
+					area : [ '500px', '500px' ],
+					success : function(layer0,data) {
+						laydate.render({
+							  elem: '#userBirthdayId' //指定元素
+							});
+						form.render();
+						bindSubmit();
+					}
+				})
+			}
+		});
+	}
+	function bindSubmit(){
+		layui.use(['form'], function(){
+			  var form = layui.form;
+			  var $ = layui.$;
+			  //监听提交
+			  form.on('submit(formDemo)', function(data){
+			    layer.msg(JSON.stringify(data.field));
+			    console.log($('#rowId').val());
+			    var type = 'post';
+			    if($('#rowId').val()!=null&& $('#rowId').val()!=''){
+			    	console.log("formDemo");
+			    	type='put';
+			    }
+			    $.ajax({
+			    	url:'user',
+			    	type:type,
+			    	data:$(data.form).serialize(),
+			    	success:function(htmldata){
+			    		layer.close(form_index);
+			    		layer.msg("添加成功");
+			    		initTableData();
+			    	}
+			    })
+			    return false;
+			  });
+			});
+	}
+	function initTableData(){
+		//执行一个 table 实例
+		  table.render({
+		    elem: '#demo'
+		    ,url: 'page' //数据接口
+		    ,title: '用户表'
+		    ,page: true //开启分页
+		    ,cols: [[ //表头
+		      {type: 'checkbox', fixed: 'left'}
+		      ,{field: 'rowId', title: 'ID', width:80, sort: true, fixed: 'left'}
+		      ,{field: 'userName', title: '用户名', width:80}
+		      ,{field: 'userLevel', title: '角色等级', width: 160, sort: true}
+		      ,{field: 'userCode', title: '用户账号', width:160, sort: true}
+		      ,{field: 'score', title: '评分', width: 80, sort: true}
+		      ,{field: 'city', title: '城市', width:150} 
+		      ,{field: 'sign', title: '签名', width: 200}
+		      ,{field: 'classify', title: '职业', width: 100}
+		      ,{field: 'wealth', title: '操作', toolbar : '#handleBar'}
+		    ]]
+		  });
+		//监听工具条
+			table.on('tool(table_user_filter)',function(obj){
+				var data = obj.data; //获得当前行数据
+				var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
+				var tr = obj.tr; //获得当前行 tr 的 DOM 对象（如果有的话）
+				var rowId = data.rowId;
+				console.log(data);
+				console.log(layEvent);
+				switch(layEvent){
+					case 'edit':
+						console.log('edit');
+						opeanBaseForm().done(function(){
+							form.val("formTest",data);
+							$('#userBirthday').val(util.toDateString(data.userBirthday,'yyyy-MM-dd'));
+							//对 data-old进行赋值
+							$('#userCode').data('old',data.userCode);
+						});
+						
+						break;
+					case 'del':
+						console.log('del');
+						layer.confirm('真的删除行么', {icon: 3,title:'tips:'},function(index){
+						      obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+						      layer.close(index);
+						      //向服务端发送删除指令
+						      $.ajax({
+									url:'user/'+rowId,
+									type:'delete',
+									success:function(data){
+										if(data){
+											initTableData();
+										}
+										
+									}
+								});
+						});
+						break;
+					default:
+						break;
+				}
+			});
+	}
+});
 </script>
-</body>
-<script type="text/javascript" src="assets/layui/layui.js"></script>
-<script type="text/javascript" src="assets/page/js/user.js"></script>
-</html>
