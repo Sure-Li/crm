@@ -3,6 +3,8 @@ package com.sureli.crm.hello.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +19,7 @@ import com.sureli.crm.bean.TbUser;
 import com.sureli.crm.layuiresult.LayuiResult;
 import com.sureli.crm.service.TbDictionaryService;
 import com.sureli.crm.service.TbResourceService;
+import com.sureli.crm.service.TbRoleResourceService;
 import com.sureli.crm.service.TbSystemSettingService;
 import com.sureli.crm.service.TbUserService;
 import com.sureli.crm.util.page.PageRequest;
@@ -34,6 +37,8 @@ public class HelloController {
 	TbSystemSettingService systemSettingService;
 	@Autowired
 	TbResourceService resourceService;
+	@Autowired 
+	TbRoleResourceService roleResourceService;
 	
 	@RequestMapping({ "/", "index" })
 	public ModelAndView goIndex(ModelAndView modelAndView) {
@@ -56,8 +61,14 @@ public class HelloController {
 		return modelAndView;
 	}
 	@RequestMapping( "/doAdminLogin" )
-	public LayuiResult doAdminLogin(String userCode,String userPassword) {
-		return  userService.doUserLogin(userCode,userPassword,1);//dictionaryService.doAdminLogin();
+	public LayuiResult doAdminLogin(String userCode,String userPassword,HttpSession session) {
+		LayuiResult result = userService.doUserLogin(userCode,userPassword,1);
+		TbUser userResult = (TbUser) result.getData().get(0);
+		Long roleId =  userResult.getRoleId();
+		List<Long> resourceIdList = roleResourceService.findAllByRoleId(roleId);
+		List<TbResource> resourceList = resourceService.findAllInList(resourceIdList);
+		session.setAttribute("resourceList", resourceList);
+		return  result;//dictionaryService.doAdminLogin();
 	}
 	@RequestMapping("/page/{pageNum}/{pageSize}")
 	public LayuiResult showPage(@PathVariable("pageNum") int pageNum,@PathVariable("pageSize") int pageSize) {

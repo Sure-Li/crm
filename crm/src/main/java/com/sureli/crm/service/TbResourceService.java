@@ -8,4 +8,6 @@ public interface TbResourceService {
 
 	List<TbResource> findAll();
 
+	List<TbResource> findAllInList(List<Long> resourceIdList);
+
 }

@@ -303,4 +303,14 @@
       update_date = #{updateDate,jdbcType=TIMESTAMP}
     where row_id = #{rowId,jdbcType=BIGINT}
   </update>
+ <select id="findAllInList"  parameterType="com.sureli.crm.bean.TbResourceExample" resultMap="BaseResultMap">
+ 	select 
+    <include refid="Base_Column_List" />
+    from tb_resource
+    where row_id in
+    <foreach collection="resourceIdList" item="resourceId" open="(" separator="," close=")" >
+  	${resourceId}
+  </foreach>
+  and active_flag = 1
+ </select>
 </mapper>

@@ -2,6 +2,8 @@ package com.sureli.crm.bean;
 
 import java.util.Date;
 
+import lombok.ToString;
+@ToString
 public class TbRoleResource {
     private Long rowId;
 

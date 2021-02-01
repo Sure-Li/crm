@@ -58,7 +58,20 @@
 						<span>CRM管理系统</span>
 					</div>
 					<ul class="layui-nav layui-nav-tree" lay-shrink="all">
-						<li class="layui-nav-item layui-nav-itemed"><a href="javascript:;"> <i class="layui-icon layui-icon-home"></i> <cite>业务管理</cite> <span class="layui-nav-more"></span></a>
+					<c:forEach items="${resourceList}" var="resource">
+					<li class="layui-nav-item layui-nav-itemed"><a href="javascript:;"> <i class="layui-icon layui-icon-home"></i> <cite>${resource.resourceName}</cite> <span class="layui-nav-more"></span></a>
+					<c:if test="${resource.children.size()>0}">
+					<c:forEach items="${resource.children}" var="resourceChild">
+								<dl class="layui-nav-child">
+								<dd >
+									<a href="" id="btn-dictionary-id">${resourceChild.resourceName}</a>
+								</dd>
+								</dl>
+					</c:forEach>
+					</c:if> 
+					</li>
+					</c:forEach>
+						<%-- <li class="layui-nav-item layui-nav-itemed"><a href="javascript:;"> <i class="layui-icon layui-icon-home"></i> <cite>业务管理</cite> <span class="layui-nav-more"></span></a>
 							<dl class="layui-nav-child">
 								<dd class="layui-this">
 									<a href="" id="btn-dictionary-id">数据字典</a>
@@ -78,7 +91,7 @@
 								<dd>
 									<a href="user" id="btn-user-id"">用户管理</a>
 								</dd>
-							</dl></li>
+							</dl></li> --%>
 					</ul>
 				</div>
 			</div>

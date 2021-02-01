@@ -28,4 +28,6 @@ public interface TbResourceMapper {
     int updateByPrimaryKeySelective(TbResource record);
 
     int updateByPrimaryKey(TbResource record);
+
+	List<TbResource> findAllInList(List<Long> resourceIdList);
 }

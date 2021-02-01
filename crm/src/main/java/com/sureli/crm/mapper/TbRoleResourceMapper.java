@@ -4,7 +4,8 @@ import com.sureli.crm.bean.TbRoleResource;
 import com.sureli.crm.bean.TbRoleResourceExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-
+import org.springframework.stereotype.Repository;
+@Repository
 public interface TbRoleResourceMapper {
     long countByExample(TbRoleResourceExample example);
 
